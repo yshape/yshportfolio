@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 리셋.css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link href="images/favicon.png" rel="icon">
+
+  <title>호두 잉글리시 / 브랜드 소개</title>
+</head>
+
+<body>
+  <!-- TOP BTN[S] -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+<a id="MOVE_TOP_BTN" href="#">
+  <img src="./images/up_icon.png" alt="">
+</a>
+<style>
+a#MOVE_TOP_BTN {
+  position: fixed;
+  right: 2%;
+  bottom: 50px;
+  display: none;
+  z-index: 10;
+}
+</style>
+<script>
+  $(function() {
+      $(window).scroll(function() {
+          if ($(this).scrollTop() > 500) {
+              $('#MOVE_TOP_BTN').fadeIn();
+          } else {
+              $('#MOVE_TOP_BTN').fadeOut();
+          }
+      });
+      
+      $("#MOVE_TOP_BTN").click(function() {
+          $('html, body').animate({
+              scrollTop : 0
+          }, 400);
+          return false;
+      });
+  });
+</script>
+<!-- TOP BTN[E] -->
+  <!-- 헤더 시작 -->
+
+  <header class="inner">
+
+    <div class="logo_box">
+      <a href="../index.html">
+        <img src="./images/logo.png" alt="">
+      </a>
+    </div>
+
+
+    <div class="nav">
+      <ul>
+        <li><a href="./index.html" style="color: #F8955A;">브랜드 소개</a></li>
+        <li><a href="../admission_menu2/index.html">입학 안내</a></li>
+        <li><a href="../consult_menu3/index.html">상담예약</a></li>
+        <li><a href="javascript:void(0);">다운로드</a></li>
+        <li><a href="javascript:void(0);">학습지원</a></li>
+        <li><a href="javascript:void(0);" class="orange">이용권 등록</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- 메인 시작 -->
+  <div class="main wrap">
+    <div class="text">
+      브랜드 소개
+    </div>
+  </div>
+
+  <!-- 메인 끝 -->
+
+
+  <!-- sub_nav 시작 -->
+
+
+  <div class="sub inner">
+
+    <div class="icon">
+      <a href="../index.html">
+        <img src="./images/sub_nav_icon.png" alt="">
+      </a>
+    </div>
+
+    <div class="text">
+      <ul>
+        <!-- <li><a href="../admission_menu2/index.html">입학 안내</a></li> -->
+        <li><a href="./index.html">브랜드 소개</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- sub_nav 끝 -->
+
+  <!-- art1 시작 -->
+
+  <div class="art1 wrap">
+    <div class="title">
+      <ul>
+        <li>청소년 영어회화 <span class="point">1위</span></li>
+        <li>더욱 스마트해진 교육의 시작</li>
+      </ul>
+    </div>
+
+    <div class="text_box">
+
+      <div class="left">
+        <div class="img">
+          <img src="./images/art1_num_icon.png" alt="">
+        </div>
+        <div class="text">
+          호두어학원의 스마트 교육과 다년간의 데이터를 통해<br>
+          청소년 영어교육 프랜차이즈 1위를 지키겠습니다.
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="img">
+          <img src="./images/art1_num_icon2.png" alt="">
+        </div>
+        <div class="text">
+          영어 교육의 스마트 러닝을 통해 아이들의 눈높이를<br>
+          보다 높이 길러내겠습니다.
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- art1 끝 -->
+
+
+
+
+
+
+  <!-- art2 시작 -->
+
+  <div class="art2 wrap">
+
+    <div class="title">
+      <ul>
+        <li>데이터 기반 <span class="point">단계별 학습</span></li>
+        <li>다년간의 교육 데이터가 보장합니다.</li>
+      </ul>
+    </div>
+    <div class="img inner">
+      <img src="./images/art2_image.png" alt="">
+    </div>
+    <div class="container inner">
+
+      <div class="item">
+        <a href="javascript:void(0);">
+          <img src="./images/art2_appstore.png" alt="">
+
+        </a>
+      </div>
+  
+      <div class="item">
+        <a href="javascript:void(0);">
+          <img src="./images/art2_googlestore.png" alt="">
+
+        </a>
+      </div>
+  
+    </div>
+  </div>
+  
+
+  <!-- art2 끝 -->
+
+
+  <!-- art3 시작 -->
+
+
+
+
+  <!-- art3 끝 -->
+
+
+
+
+
+  <!-- footer 시작 -->
+
+  <div class="footer wrap">
+    <div class="footer_text">
+      <ul>
+        <li>고객지원센터 02-542-4021</li>
+        <li>팩스 02-542-2424</li>
+        <li><a href="">이용약관</a></li>
+        <li><a href="">개인정보처리방침</a></li>
+        <li class="orange"><a href=""> 패밀리 사이트</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- footer 끝 -->
+
+  <!-- footer2 시작 -->
+
+
+  <div class="footer2 wrap">
+    <div class="logo_box">
+      <img src="./images/footer_logo.png" alt="">
+    </div>
+    <div class="footer2_text">
+      <ul>
+        <li>대표이사: 김상혁 주소:[123422] 서울시 강서구 발산동 기흥로 515- 1113호 , (주) 호두잉글리쉬어학원 </li>
+        <li>사업자 등록번호: 220-1232-1113 통신판매 신고번호: 제 2010-서울동탄-0422호 개인정보 책임</li>
+        <li>Copyright ⓒ Hodoo Language Jr. All right reserved.</li>
+      </ul>
+    </div>
+
+    <div class="icons">
+
+      <a href=""><img src="./images/footer_kakao.png" alt="" class="kakao"></a>
+      <a href=""><img src="./images/footer_band.png" alt="" class="kakao"></a>
+    </div>
+  </div>
+
+
+  <!-- footer2 끝 -->
+
+
+</body>
+
+
+</html>

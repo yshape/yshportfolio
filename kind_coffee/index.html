@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/jquery.bxslider.css">
+  <link rel="stylesheet" href="./css/swiper.css">
+  <link href="images/favicon.png" rel="icon">
+
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <script src="./js/youtube.js"></script>
+  <script src="./js/main.js"></script>
+  <script defer src="./js/topbtn.js"> </script>
+
+  <style>
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+
+  <title>더 착한커피</title>
+</head>
+
+<body>
+
+  <!-- TOP BTN[S] -->
+  <a id="MOVE_TOP_BTN" href="#">
+    <img src="./images/up_icon.png" alt="">
+  </a>
+  <style>
+    a#MOVE_TOP_BTN {
+      position: fixed;
+      right: 2%;
+      bottom: 50px;
+      display: none;
+      z-index: 10;
+    }
+  </style>
+  <!-- <script src="//code.jquery.com/jquery.min.js"></script> -->
+  <script>
+    $(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 500) {
+          $('#MOVE_TOP_BTN').fadeIn();
+        } else {
+          $('#MOVE_TOP_BTN').fadeOut();
+        }
+      });
+
+      $("#MOVE_TOP_BTN").click(function () {
+        $('html, body').animate({
+          scrollTop: 0
+        }, 400);
+        return false;
+      });
+    });
+  </script>
+  <!-- TOP BTN[E] -->
+
+
+  <!-- 헤더 시작 -->
+  <header class="inner">
+    <a href="javascript:void(0);">
+      <img src="./images/header_logo.png" alt="">
+    </a>
+    <div class="nav">
+      <ul>
+        <li><a href="javascript:void(0);">KINDCOFFEE</a></li>
+        <li><a href="./sub2/index.html">MENU</a></li>
+        <li><a href="javascript:void(0);">STORE</a></li>
+        <li><a href="./sub/index.html">MEMBERSHIP</a></li>
+        <li><a href="javascript:void(0);">CONTENTS</a></li>
+      </ul>
+    </div>
+    <!-- 가맹문의 박스 -->
+    <div class="nav_box"><a href="javascript:void(0);">가맹문의</a></div>
+
+  </header>
+  <!-- 헤더 종료 -->
+
+  <aside>
+    <div class="banner">
+
+      <input id="tab1" type="checkbox">
+      <label for="tab1"><img src="./images/aside_close.png" alt=""></label>
+      <div class="content">
+        <a href="javascript:void(0);">
+          <div class="item front"><img src="./images/aside_image.png" alt="img front" /></div>
+          <div class="item back"><img src="./images/aside_image2.png" alt="img back" /></div>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- 메인 시작 -->
+
+  <div class="main wrap">
+    <div class="slider">
+      <div><img src="./images/main_image.png" alt=""></div>
+      <div><img src="./images/main_image4.png" alt=""></div>
+      <div><img src="./images/main_image3.png" alt=""></div>
+      <div><img src="./images/main_image2.png" alt=""></div>
+    </div>
+  </div>
+
+  <!-- 메인 끝 -->
+
+  <!-- art1 시작 -->
+
+  <div class="art1 inner">
+    <div class="title">
+      <span class="title_p">THE KIND`S
+        <span class="title">&nbsp;BEST SELLER</span>
+      </span>
+    </div>
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="art1_box1">
+
+            <img src="./images/art1_box1_image.png" alt="">
+            <ul>
+              <li>리얼 마늘 바게트 볼</li>
+              <li>(Real garlic baguette bowl)</li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="art1_box2">
+
+            <img src="./images/art1_box2_image.png" alt="">
+            <ul>
+              <li>젤라또 찰떡 프라페노R</li>
+              <li>(glutinous rice cake Frappeno)</li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="art1_box3">
+
+            <img src="./images/art1_box3_image.png" alt="">
+            <ul>
+              <li>바베큐 치킨 깜빠뉴</li>
+              <li>(Barbecue chicken Campagne)</li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="art1_box3">
+            <img src="./images/art1_box4_image.png" alt="">
+            <ul>
+              <li>카라멜 시나몬 크로플바</li>
+              <li>(Caramel Cinnamon Croffle Bar)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="art1_box3">
+
+            <img src="./images/art1_box5_image.png" alt="">
+            <ul>
+              <li>모짜렐라 크로크무슈</li>
+              <li>(Mozzarella Croque Mushu)</li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="art1_box3">
+
+            <img src="./images/art1_box6_image.png" alt="">
+            <ul>
+              <li>바닐라 크림 빙수</li>
+              <li>(Vanilla cream shaved ice)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+
+    <!-- <div class="container">
+
+      <div class="art1_box1">
+
+        <img src="./images/art1_box1_image.png" alt="">
+        <ul>
+          <li>라코타 샌드위치, 치킨랩</li>
+          <li>(Lakota sandwich, chicken wrap)</li>
+        </ul>
+
+      </div>
+
+      <div class="art1_box2">
+
+        <img src="./images/art1_box2_image.png" alt="">
+        <ul>
+          <li>헤이즐넛 자바칩 파르페</li>
+          <li>(Hazelnut Java Chip Parfait)</li>
+        </ul>
+
+      </div>
+
+      <div class="art1_box3">
+
+        <img src="./images/art1_box3_image.png" alt="">
+        <ul>
+          <li>치즈&에그마요 샌드위치</li>
+          <li>(Cheese & eggmayo sandwich)</li>
+        </ul>
+
+      </div>
+    </div> -->
+  </div>
+
+  <!-- art1 끝 -->
+
+
+
+
+  <!-- art2 시작 -->
+
+  <div class="art2 wrap">
+
+    <img src="./images/art2_img.png" alt="">
+    <div class="art2_btn_group">
+
+
+      <a href="javascript:void(0);">
+        <div class="btn_fbrown">
+          <span>가맹 문의</span>
+        </div>
+      </a>
+
+
+      <a href="javascript:void(0);">
+        <div class="btn_nbrown">
+          <span>브랜드 소개</span>
+        </div>
+      </a>
+
+
+      <a href="javascript:void(0);">
+        <div class="btn_nbrown">
+          <span>신규 매장</span>
+        </div>
+      </a>
+
+
+    </div>
+  </div>
+
+  <!-- art2 끝 -->
+
+
+  <!--YOUTUBE VIDEO-->
+  <section class="youtube wrap">
+    <div class="obj_group">
+
+      <div class="obj1">
+        <img src="./images/section_obj1.png" alt="">
+      </div>
+
+      <div class="obj2">
+        <img src="./images/section_obj2.png" alt="">
+      </div>
+
+      <div class="obj3">
+        <img src="./images/section_obj3.png" alt="">
+      </div>
+
+    </div>
+    <div class="title">
+      <span class="title_p">THE KIND`S
+        <span class="title">&nbsp;STORY</span>
+      </span>
+    </div>
+    <div class="youtube__area">
+      <div id="player"></div>
+    </div>
+  </section>
+
+
+  <!-- art3 시작 -->
+
+  <div class="art3 inner">
+
+    <!-- art4 왼쪽 부분 -->
+    <div class="art3_left">
+
+      <div class="art3_lbox_group">
+
+        <div class="art3_lbox1">
+          <img src="./images/art3_left_box1.png" alt="">
+        </div>
+
+        <div class="art3_lbox2">
+          <img src="./images/art3_left_box2.png" alt="">
+        </div>
+
+        <div class="art3_lbox3">
+          <img src="./images/art3_left_box3.jpg" alt="">
+          <span><a href="javascript:void(0);">more</a></span>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- art3 오른쪽 부분 -->
+    <div class="art3_right">
+
+      <div class="art3_rbox_group">
+        <div class="art3_rbox1">
+          <div class="img_box">
+            <img src="./images/coffee_gif.gif" alt="">
+          </div>
+        </div>
+        <div class="art3_rbox_sub_group">
+          <div class="art3_rbox2">
+            <img src="./images/art3_right_box2.png" alt="">
+          </div>
+
+          <div class="art3_rbox3">
+            <img src="./images/art3_right_box3.png" alt="">
+            <span><a href="javascript:void(0);">more</a></span>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+
+    <!-- art3 끝 -->
+
+  </div>
+
+
+
+  <!-- footer 시작 -->
+
+  <footer class="wrap">
+    <div class="footer_nav">
+      <ul>
+        <li><a href="javascript:void(0);">오시는 길</a></li>
+        <li><a href="javascript:void(0);">제휴문의</a></li>
+        <li><a href="javascript:void(0);">개인정보처리방침</a></li>
+        <li><a href="javascript:void(0);">이용약관</a></li>
+        <li id="red"><a href="javascript:void(0);">고객센터 1600-1600</a></li>
+      </ul>
+    </div>
+    <div class="line wrap">
+
+    </div>
+    <div class="footer_text">
+      <img src="./images/footer_logo.png" alt="">
+      <ul>
+        <li>서울시 성동구 성원6길 대표이사 : 김성모</li>
+        <li>사업자 등록번호 206-200-31242 kindcoffee@kind.co.kr</li>
+        <li>Copyright &copy; by kindcoffee, All rights reserved.</li>
+      </ul>
+    </div>
+
+    <div class="leaf">
+      <img src="./images/footer_leaf.png" alt="">
+    </div>
+  </footer>
+
+  <!-- footer 끝 -->
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,438 @@
+/* 공통부분 */
+/* 에스코어 4 레귤러 */
+@font-face {
+  font-family: 'S-CoreDream-4Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 에스코어 5 미들 */
+@font-face {
+  font-family: 'S-CoreDream-5Medium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 에스코어 6 볼드 */
+@font-face {
+  font-family: 'S-CoreDream-6Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+/* 사용 색상 */
+
+/* #3B3B3B */
+
+* {}
+
+
+.inner {
+  width: 1200px;
+  margin: 0 auto;
+  font-family: 'S-CoreDream-6Bold';
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+
+}
+
+.wrap {
+  width: 1900px;
+  margin: 0 auto;
+}
+
+
+.title {
+  font-family: 'S-CoreDream-5Medium';
+  font-size: 35px;
+  margin-bottom: 40px;
+}
+
+.title_point {
+  color: #1689FC;
+}
+
+.title_sub {
+  font-family: 'S-CoreDream-6Bold';
+  font-size: 18px;
+  margin-top: 100px;
+  margin-bottom: 15px;
+  color: #3A4C9F;
+}
+
+
+.btn_blue {
+  position: absolute;
+  line-height: 50px;
+  background-color: #3A4C9F;
+  color: white;
+  width: 300px;
+  height: 50px;
+}
+
+.btn_blue:hover {
+  text-decoration: underline;
+}
+
+
+.btn_white {
+  position: absolute;
+  line-height: 44px;
+  border: 3px solid white;
+  color: white;
+  width: 300px;
+  height: 50px;
+  box-sizing: border-box;
+}
+
+.btn_white:hover {
+  background-color: white;
+  color: #1669B9;
+}
+
+/* header 시작 */
+
+header {
+  height: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .logo {}
+
+/* header 끝 */
+
+/* nav 시작 */
+
+nav {
+  height: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul {}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 90px;
+}
+
+nav ul li:first-child {
+  margin-left: 0px;
+}
+
+nav ul li a {
+  color: #3B3B3B;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: #3A4C9F;
+}
+
+nav ul li::after {
+  display: block;
+  content: "";
+  width: 30px;
+  height: 3px;
+  background-color: #166ab9af;
+  transform: translateX(20px) translateY(-22px) rotateY(0deg);
+  transition: .3s;
+  border-radius: 10px;
+  opacity: 0;
+  perspective: 100px;
+}
+
+nav ul li:nth-child(3):after {
+  display: block;
+  content: "";
+  width: 30px;
+  height: 3px;
+  background-color: #166ab9a4;
+  transform: translateX(80px) translateY(-22px)  rotateY(0deg);
+  transition: .3s;
+  border-radius: 10px;
+  opacity: 0;
+  perspective: 100px;
+}
+
+
+
+nav ul li:hover::after {
+  /* display: none; */
+  transform: translateX(20px) translateY(-32px) rotateY(180deg);
+  opacity: 1;
+
+
+}
+
+nav ul li:nth-child(3):hover:after {
+ /* display: none; */
+ transform: translateX(80px) translateY(-32px) rotateY(180deg);
+ opacity: 1;
+
+}
+
+
+/* nav 끝 */
+
+/* main 시작 */
+.main {
+  height: 600px;
+  position: relative;
+}
+
+.main .main_btn {
+  position: absolute;
+  left: calc(50% - 95px);
+  bottom: 100px;
+}
+
+/* main 끝 */
+
+/* art1 시작 */
+
+.art1 .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.art1_box {
+  position: relative;
+}
+
+.art1_box:nth-child(3),
+.art1_box:nth-child(4) {
+  margin-top: -2px;
+}
+
+
+.art1_box .arrow {
+  position: absolute;
+  left: 30px;
+  bottom: 40px;
+}
+
+
+
+/* art1 끝 */
+
+/* art2 시작 */
+.art2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  background-color: red;
+  height: 600px;
+  background-image: url(../images/art2_image.png);
+}
+
+.art2 .container {
+  margin-top: 220px;
+  width: 890px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.art2 .art2_box {
+  opacity: .8;
+}
+
+.art2 .art2_box:hover {
+  opacity: 1;
+}
+
+
+
+/* art2 끝 */
+
+/* art3 시작 */
+
+.art3 .container {
+  display: flex;
+}
+
+.art3_box {
+  position: relative
+}
+
+.art3 .arrow {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+
+}
+
+/* art3 끝 */
+
+/* art4 시작 */
+
+.art4_box {
+  position: relative;
+}
+
+.art4 .btn_blue {
+  left: 49px;
+  bottom: 50px;
+}
+
+.art4 .btn_white {
+  left: 49px;
+  bottom: 50px;
+}
+
+
+
+
+/* art4 끝 */
+
+
+
+
+
+
+
+
+/* notice 시작 */
+
+.notice {}
+
+.notice .notice_box {
+  display: flex;
+  margin-top: 70px;
+  font-family: 'S-CoreDream-5Medium';
+  font-size: 16px;
+  justify-content: space-between;
+
+}
+
+.notice .notice_box .notice_left {
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.notice .notice_box .notice_left .left_text1 {
+  
+}
+
+.notice .notice_box .notice_left .left_text1 a {
+  text-decoration: none;
+  color: #6f6f6f;
+
+}
+
+.notice .notice_box .notice_left .left_text1 a:hover {
+  color: #272727;
+
+}
+
+
+
+.notice .notice_box .notice_left .left_text1 ul {}
+
+.notice .notice_box .notice_left .left_text1 ul li {
+  text-align: left;
+  margin: 30px 0;
+}
+
+.notice .notice_box .notice_left .left_text1 ul li:not(:first-child):after {
+  content: "";
+  display: block;
+  width: 550px;
+  border-bottom: 1px solid #e6e6e6;
+  margin: 10px 0;
+}
+
+.notice .notice_box .notice_left .left_text1 ul li:first-child {
+  font-size: 20px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  color: #1689FC;
+}
+
+
+.notice .notice_box .notice_left .left_text2 {
+  position: relative;
+}
+
+.notice .notice_box .notice_left .left_text2 ul {
+  width: 120px;
+  position: absolute;
+  right: 50px;
+  top: -18px;
+}
+
+.notice .notice_box .notice_left .left_text2 ul li {
+  text-align: right;
+  margin: 40px 0;
+  color: #3B3B3B;
+  
+}
+
+.notice .notice_box .notice_left .left_text2 ul li:not(:first-child):after {
+}
+
+.notice .notice_box .notice_left .left_text2 ul li:first-child {
+}
+
+.notice .notice_right {
+  margin-top: 20px;
+}
+
+/* notice 끝 */
+
+
+/* footer 시작  */
+
+.foot {
+  display: flex;
+  margin-top: 110px;
+  background-color: #FAFAFA;
+  height: 300px;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  color: #6f6f6f;
+}
+
+.foot .logo{
+  margin-top: 20px;
+}
+.foot p {
+  margin-top: 20px;
+}
+.foot .adress {
+  font-weight: 700;
+}
+
+.foot .container {
+  height: 100px;
+  display: flex;
+  margin-top: 20px;
+}
+
+.foot .container .foot_left_image {
+  display: flex;
+  align-items: center;
+}
+
+.foot .container .foot_right_image {
+  display: flex;
+  align-items: center;
+}
+
+.foot span {
+  margin: 0 20px;
+}
+.foot .last {
+  margin-right: 0;
+}
+
+
+/* footer 끝 */

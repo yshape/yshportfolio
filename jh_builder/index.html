@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <script src="./js/youtube.js"></script>
+  <title>진흥건설</title>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <link href="images/favicon.png" rel="icon">
+
+
+</head>
+
+<body>
+
+  <!-- TOP BTN[S] -->
+
+<a id="MOVE_TOP_BTN" href="#">
+  <img src="./images/up_icon.png" alt="">
+</a>
+<style>
+a#MOVE_TOP_BTN {
+  position: fixed;
+  right: 2%;
+  bottom: 50px;
+  display: none;
+  z-index: 10;
+}
+</style>
+<script>
+  $(function() {
+      $(window).scroll(function() {
+          if ($(this).scrollTop() > 500) {
+              $('#MOVE_TOP_BTN').fadeIn();
+          } else {
+              $('#MOVE_TOP_BTN').fadeOut();
+          }
+      });
+      
+      $("#MOVE_TOP_BTN").click(function() {
+          $('html, body').animate({
+              scrollTop : 0
+          }, 400);
+          return false;
+      });
+  });
+</script>
+<!-- TOP BTN[E] -->
+
+
+  <aside>
+    <a href="javascript:void(0);">
+      <div class="item"><img src="./images/aside1.png" alt=""></div>
+    </a>
+    <a href="javascript:void(0);">
+      <div class="item"><img src="./images/aside2.png" alt=""></div>
+    </a>
+    <a href="javascript:void(0);">
+      <div class="item"><img src="./images/aside3.png" alt=""></div>
+    </a>
+  </aside>
+
+  <!-- 헤더시작 -->
+  <header class="inner">
+    <div class="logo">
+      <a href="javascript:void(0);">
+        <img src="./images/header_logo.png" alt="">
+      </a>
+    </div>
+    <!-- 헤더 안 작은 네비 -->
+    <div class="header_nav">
+      <ul>
+        <li><a href="javascript:void(0);">HOME</a></li>
+        <li><a href="javascript:void(0);">LOGIN</a></li>
+      </ul>
+    </div>
+  </header>
+  <!-- 헤더 끝 -->
+
+
+  <!-- 네비 시작 -->
+
+  <!-- 네비끝 -->
+
+
+  <!-- 메인 시작 -->
+
+  <div class="main wrap">
+    <div class="text_img">
+      <img src="./images/main_text.png" alt="">
+    </div>
+    <div class="video_group">
+      <video src="./videos/Night - 30154.mp4" autoplay loop muted></video>
+      <a href="javascript:void(0);"> <img src="./images/main_btn.png" alt="" class="btn"></a>
+    </div>
+
+    <nav class="wrap">
+      <ul>
+        <li class="main">
+          <a class="first"  href="">사업분야</a>
+          <ul class="sub">
+            <a href="./Business_menu1_sub1/index.html"><li>기업정보</li></a>
+            <a href="javascript:void(0);"><li>CEO</li></a>
+            <a href="javascript:void(0);"><li>VISION</li></a>
+            <a href="javascript:void(0);"><li>연혁</li></a>
+            <a href="javascript:void(0);"><li>주요사업</li></a>
+          </ul>
+        </li>
+        <li class="main">
+          <a class="first" href="">홍보센터</a>
+          <ul class="sub">
+            <a href="javascript:void(0);"><li>웹진</li></a>
+            <a href="javascript:void(0);"><li>영상 홍보관</li></a>
+            <a href="javascript:void(0);"><li>진흥 뉴스</li></a>
+            <a href="javascript:void(0);"><li>브로슈어</li></a>
+            <a href="javascript:void(0);"><li>보도자료</li></a>
+          </ul>
+        </li>
+        <li class="main">
+          <a class="first"  href="javascript:void(0);">인재채용</a>
+          <ul class="sub">
+            <a href="javascript:void(0);"><li>공개채용</li></a>
+            <a href="javascript:void(0);"><li>인재개발원</li></a>
+            <a href="javascript:void(0);"><li>일반사항</li></a>
+          </ul>
+
+        </li>
+        <li class="main">
+          <a class="first"  href="">고객센터</a>
+          <ul class="sub">
+            <a href="javascript:void(0);"><li>고객상담실</li></a>
+            <a href="javascript:void(0);"><li>공익신고</li></a>
+            <a href="javascript:void(0);"><li>전자신문고</li></a>
+            <a href="javascript:void(0);"><li>시설개방 안내</li></a>
+            <a href="javascript:void(0);"><li>입찰정보</li></a>
+          </ul>
+
+        </li>
+        <li class="main">
+          <a class="first" href="">투자정보</a>
+          <ul class="sub">
+            <a href="./Business_menu5_sub1/index.html"><li>정보공개제도</li></a>
+            <a href="javascript:void(0);"><li>사전정보공표</li></a>
+            <a href="javascript:void(0);"><li>법무</li></a>
+            <a href="javascript:void(0);"><li>사규</li></a>
+            <a href="javascript:void(0);"><li>사업실명제</li></a>
+          </ul>
+
+        </li>
+      </ul>
+      <div class="nav_search">
+        <input type="text" placeholder=" &nbsp; 검색어를 입력하세요.">
+        <img src="./images/nav_search_icon.png" alt="">
+      </div>
+
+    </nav>
+  </div>
+
+  <!-- 메인 끝 -->
+
+  <!-- art1 시작 -->
+  <div class="art1 inner">
+    <span class="title_b">JH
+      <span class="title">Service</span>
+      <p class="title_sub">국내외 발전설비 Q&M, 발전 플랜트 설비 진단 및 성능개선, 송변선 절비, 신재생 EPIC Total 솔루션을</p>
+      <p class="title_sub">제공하는 JH서비스가 세계 No.1으로 도약하며 나아갑니다. </p>
+    </span>
+
+    <img src="./images/art1_image.png" alt="">
+
+    <div class="container">
+      <div class="obj_group">
+        <div class="obj1"></div>
+        <div class="obj2"></div>
+        <div class="obj3"></div>
+        <div class="obj4"></div>
+        <div class="obj5"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- art1 끝 -->
+
+  <!-- art2 시작 -->
+  <div class="art2 .wrap">
+    <span class="title_b">Notice &
+      <span class="title">News</span>
+      <p class="title_sub">세계 No.1 설비산업으로 힘차게 도약해 나갈 진흥기업입니다. 사람이 있어서</p>
+      <p class="title_sub">큰 빛을 만드는 기업, 사람과 기술이 혁명입니다.</p>
+    </span>
+    <div class="container">
+      <div class="art2_box1">
+        <img src="./images/art2_box1.png" alt="">
+        <div class="art2_box1_group">
+          <!-- 리스트 -->
+          <ul>
+            <li>· 2021년 상반기 신입사원(4직급,별정직)및 채용형인턴 채용</li>
+            <li>· '21년도 진흥건설 중소기업 상생협력사업 지원기업 2차 모집</li>
+            <li>· 공공기관 청렴도 조사 관련 개인정보 제3자 제공사항 알림</li>
+          </ul>
+          <!-- 버튼 -->
+          <div class="btn_blue">
+            <div><a href="javascript:void(0);">MORE</a></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="art2_box2">
+        <img src="./images/art2_box2.png" alt="">
+
+        <div class="art2_box2_group">
+          <!-- 리스트 -->
+          <ul>
+            <li>· 2021년 상반기 신입사원(4직급,별정직)및 채용형인턴 채용</li>
+            <li>· '21년도 진흥건설 중소기업 상생협력사업 지원기업 2차 모집</li>
+            <li>· 공공기관 청렴도 조사 관련 개인정보 제3자 제공사항 알림</li>
+          </ul>
+          <!-- 버튼 -->
+          <div class="btn_blue">
+            <div><a href="javascript:void(0);">MORE</a></div>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="art2_box3">
+        <img src="./images/art2_box3.png" alt="">
+
+        <div class="art2_box3_group">
+          <!-- 리스트 -->
+          <ul>
+            <li>· 2021년 상반기 신입사원(4직급,별정직)및 채용형인턴 채용</li>
+            <li>· '21년도 진흥건설 중소기업 상생협력사업 지원기업 2차 모집</li>
+            <li>· 공공기관 청렴도 조사 관련 개인정보 제3자 제공사항 알림</li>
+          </ul>
+          <!-- 버튼 -->
+          <div class="btn_blue">
+            <div><a href="javascript:void(0);">MORE</a></div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- art2 끝 -->
+  <!-- <section class="youtube inner">
+    <div class="youtube__area">
+      <div id="player"></div>
+    </div>
+    <div class="youtube__cover"></div>
+    </div>
+  </section> -->
+  <!-- art3시작 -->
+  <div class="art3 inner">
+    <div class="art3_left">
+      <ul class="ul1">
+        <li>진흥 EnC</li>
+        <li>진흥 EnC는 <span class="point">발전플랜트에 대한 Total 솔루션</span>을</li>
+        <li>제공하는 <span class="point">정비 전문회사</span>입니다.</li>
+      </ul>
+      <ul class="ul2">
+        <li><span class="point">Perfect&Pride를 가치</span>로 고객 여러분께 진흥EnC인의 혼이 담긴</li>
+        <li><span class="point">세계 최고 수준의 정비기술</span> 서비스를 제공하겠습니다.</li>
+      </ul>
+      <div class="btn_group">
+        <a href="javascript:void(0);"><div class="btn"></div></a>
+        <a href="javascript:void(0);"><div class="btn2"></div></a>
+      </div>
+    </div>
+
+    <div class="art3_right">
+      <img src="./images/art3_image.png" alt="">
+    </div>
+
+  </div>
+  <!-- art3끝 -->
+  <div class="fline wrap">
+
+  </div>
+
+  <!-- art4 시작 -->
+
+
+  <div class="art4 wrap">
+    <div class="container">
+      <div class="left">
+        <ul>
+          <li>진흥 ENC 활동 실적</li>
+          <li>· 2021년 상반기 신입사원(4직급,별정직)및 채용형인턴 채용</li>
+          <li>· '21년도 진흥건설 중소기업 상생협력사업 지원기업 2차 모집</li>
+          <li>· 공공기관 청렴도 조사 관련 개인정보 제3자 제공사항 알림</li>
+        </ul>
+        <a href="javascript:void(0);">
+          <span class="art4_lbtn">
+            <span>자세히 보기</span>
+          </span>
+        </a>
+      </div>
+
+      <div class="right">
+        <ul>
+          <li>진흥 ENC 채용공고 알림</li>
+          <li>· 진흥 Enc와 함께 미래를 이끌어갈 역량있는 인재를 모집합니다.</li>
+          <li>· 배관, Fo-Flusing 라인 경력자 00명 </li>
+          <li>· 용접 (티그,가솔린) 특수용접 신입무관, 경력자 우대 00명</li>
+        </ul>
+        <a href="javascript:void(0);">
+          <span class="art4_rbtn">
+            <span class="text">자세히 보기</span>
+          </span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="gline wrap"></div>
+
+
+
+
+  <!-- art4 끝 -->
+
+
+  <!-- footer 시작 -->
+
+  <footer class="wrap">
+    <div class="container">
+      <div class="left">
+        <ul>
+          <li>&copy; 2020. JHenc.co.kr. All rights reserved.</li>
+          <li>(주) 진흥기업</li>
+          <li>주소 : 14333 대구 광역시 방촌동 입석로 120 -1</li>
+          <li>사업자 등록번호 : 0123-12-124 -12</li>
+          <li>대표자 : 홍길동</li>
+          <li>TEL : 1600=0000/li>
+        </ul>
+      </div>
+      <div class="right">
+        <ul>
+          <li><a href="javascript:void(0);">개인정보처리방침</a></li>
+          <li><a href="javascript:void(0);">쿠키 정책</a></li>
+          <li><a href="javascript:void(0);">쿠키 설정</a></li>
+          <li><a href="javascript:void(0);">웹사이트 이용약관</a></li>
+        </ul>
+      </div>
+      <img src="./images/header_logo.png" alt="" class="footer_logo">
+    </div>
+
+  </footer>
+
+
+
+  <!-- footer 끝 -->
+
+</body>
+
+</html>

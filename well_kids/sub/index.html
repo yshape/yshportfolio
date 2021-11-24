@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>웰키즈 소아청소년과의원 / sub </title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="/total/font.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <link href="images/favicon.png" rel="icon">
+  <script defer src="./js/main.js">
+
+  </script>
+</head>
+
+  <!-- TOP BTN[S] -->
+	<a id="MOVE_TOP_BTN" href="#">
+    <img src="./images/up_icon.png" alt="">
+  </a>
+	<style>
+	a#MOVE_TOP_BTN {
+		position: fixed;
+		right: 2%;
+		bottom: 50px;
+		display: none;
+		z-index: 2;
+	}
+	</style>
+	<script src="//code.jquery.com/jquery.min.js"></script>
+	<script>
+    $(function() {
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 500) {
+                $('#MOVE_TOP_BTN').fadeIn();
+            } else {
+                $('#MOVE_TOP_BTN').fadeOut();
+            }
+        });
+        
+        $("#MOVE_TOP_BTN").click(function() {
+            $('html, body').animate({
+                scrollTop : 0
+            }, 400);
+            return false;
+        });
+    });
+	</script>
+<!-- TOP BTN[E] -->
+
+<body>
+  <!-- 헤더시작 -->
+  <header class="inner">
+    <div class="logo">
+      <a href="../index.html"><img src="./images/logo.png" alt=""></a>
+    </div>
+  </header>
+  <!-- 헤더끝 -->
+
+  <!-- 네비시작 -->
+  <nav class="inner">
+    <ul>
+      <li><a href="../menu_1/index.html">병원소개</a></li>
+      <li><a href="javascript:void(0);">이용안내</a></li>
+      <li><a href="javascript:void(0);">알레르기 호흡기 클리닉</a></li>
+      <li><a href="javascript:void(0);">발달센터</a></li>
+      <li><a href="javascript:void(0);">진료과목</a></li>
+      <li><a href="../menu_5/index.html">병원소식</a></li>
+    </ul>
+    <!-- 네비끝 -->
+
+  </nav>
+
+
+  <!-- title 시작 -->
+
+  <div class="title wrap">
+    <div class="text">
+      알레르기 호흡기 <span>클리닉</span>
+    </div>
+
+    <div class="sub_title">
+
+      <div class="item">
+        <a href="javascript:void(0);"><img src="./images/home_icon.png" alt=""></a>
+      </div>
+
+      <div class="item">
+        <a href="javascript:void(0);">home</a>
+      </div>
+
+      <div class="item">
+        <img src="./images/arrow_icon.png" alt="">
+      </div>
+
+      <div class="item">
+        <a href="javascript:void(0);">알레르기 호흡기 클리닉</a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- title 끝 -->
+
+
+  <!-- main 시작 -->
+
+
+  <div class="main wrap">
+    <img src="./images/main_image.png" alt="">
+  </div>
+
+
+  <!-- main 끝 -->
+  <!-- 라디오 시작 -->
+
+  <div id="container">
+
+    <ul class="tab">
+      <li class="current" data-tab="tab1"><a href="javascript:void(0);">의료진 소개</a></li>
+      <li data-tab="tab2"><a href="javascript:void(0);">진료예약 방법</a></li>
+    </ul>
+
+    <div id="tab1" class="tabcontent current">
+      <div class="art1 inner">
+
+
+
+        <!-- 박스1 시작 -->
+        <div class="art1_box">
+
+          <div class="left">
+            <img src="./images/art1_box1_image.png" alt="">
+          </div>
+
+
+
+          <div class="right">
+
+            <div class="text">
+              <ul>
+                <li>김지원 과장 <span>[소화기 내과2]</span></li>
+                <li>전문진료분야</li>
+                <li>역류성 식도염, 위궤양, 십이지장과, 기능성소화불량 ,변비</li>
+              </ul>
+            </div>
+
+            <div class="table">
+              <table>
+
+                <tr>
+                  <td></td>
+                  <td>월</td>
+                  <td>화</td>
+                  <td>수</td>
+                  <td>목</td>
+                  <td>금</td>
+                  <td>토</td>
+                </tr>
+
+                <tr>
+                  <td>오전</td>
+                  <td></td>
+                  <td></td>
+                  <td>●</td>
+                  <td>●</td>
+                  <td>●</td>
+                  <td>●</td>
+                </tr>
+
+                <tr>
+                  <td>오후</td>
+                  <td>●</td>
+                  <td>●</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+
+              </table>
+
+            </div>
+
+            <div class="btn_g">
+              <a href="javascript:void(0);">
+                <div class="btn">
+                  이력 자세히 보기
+                </div>
+              </a>
+              <a href="javascript:void(0);">
+                <div class="btn">
+                  의료진 인사말
+
+                </div>
+              </a>
+            </div>
+
+
+          </div>
+        </div>
+        <!-- 박스 1 끝 -->
+
+        <!-- 박스1 시작 -->
+        <div class="art1_box">
+
+          <div class="left">
+            <img src="./images/art1_box2_image.png" alt="">
+          </div>
+
+
+
+          <div class="right">
+
+            <div class="text">
+              <ul>
+                <li>심영광 과장 <span>[소화기 내과1]</span></li>
+                <li>전문진료분야</li>
+                <li>위장관 질환, 간담도 질환, 위 내시경, 식도 질환, 위 십이지장 질환, 역류성 식도염, 소화성 궤양</li>
+              </ul>
+            </div>
+
+            <div class="table">
+              <table>
+
+                <tr>
+                  <td></td>
+                  <td>월</td>
+                  <td>화</td>
+                  <td>수</td>
+                  <td>목</td>
+                  <td>금</td>
+                  <td>토</td>
+                </tr>
+
+                <tr>
+                  <td>오전</td>
+                  <td>●</td>
+                  <td>●</td>
+                  <td>●</td>
+                  <td></td>
+                  <td>●</td>
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <td>오후</td>
+                  <td>●</td>
+                  <td>●</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+
+              </table>
+
+            </div>
+
+            <div class="btn_g">
+              <a href="javascript:void(0);">
+                <div class="btn">
+                  이력 자세히 보기
+                </div>
+              </a>
+              <a href="javascript:void(0);">
+                <div class="btn">
+                  의료진 인사말
+
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- 박스 1 끝 -->
+
+        <!-- 박스1 시작 -->
+        <div class="art1_box">
+
+          <div class="left">
+            <img src="./images/art1_box3_image.png" alt="">
+          </div>
+
+
+
+          <div class="right">
+
+            <div class="text">
+              <ul>
+                <li>유준호 과장 <span>[순환기 내과1]</span></li>
+                <li>전문진료분야</li>
+                <li>부정맥, 동맥경화, 심혈관질환, 고지혈증 , 고혈압</li>
+              </ul>
+            </div>
+
+            <div class="table">
+              <table>
+
+                <tr>
+                  <td></td>
+                  <td>월</td>
+                  <td>화</td>
+                  <td>수</td>
+                  <td>목</td>
+                  <td>금</td>
+                  <td>토</td>
+                </tr>
+
+                <tr>
+                  <td>오전</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>●</td>
+                  <td>●</td>
+                  <td>●</td>
+                </tr>
+
+                <tr>
+                  <td>오후</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>●</td>
+                  <td>●</td>
+                  <td>●</td>
+                </tr>
+
+              </table>
+
+            </div>
+
+            <div class="btn_g">
+              <a href="javascript:void(0);">
+                <div class="btn">
+                  이력 자세히 보기
+                </div>
+              </a>
+              <a href="javascript:void(0);">
+                <div class="btn">
+                  의료진 인사말
+
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- 박스 1 끝 -->
+
+        <!-- 박스1 시작 -->
+        <div class="art1_box">
+
+          <div class="left">
+            <img src="./images/art1_box4_image.png" alt="">
+          </div>
+
+
+
+          <div class="right">
+
+            <div class="text">
+              <ul>
+                <li>양세정 과장 <span>[내분비 내과2]</span></li>
+                <li>전문진료분야</li>
+                <li>당뇨병, 대사증후군, 갑상선암, 갑상선 결절, 골다공증, 부신 질환</li>
+              </ul>
+            </div>
+
+            <div class="table">
+              <table>
+
+                <tr>
+                  <td></td>
+                  <td>월</td>
+                  <td>화</td>
+                  <td>수</td>
+                  <td>목</td>
+                  <td>금</td>
+                  <td>토</td>
+                </tr>
+
+                <tr>
+                  <td>오전</td>
+                  <td></td>
+                  <td>●</td>
+                  <td>●</td>
+                  <td></td>
+                  <td>●</td>
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <td>오후</td>
+                  <td>●</td>
+                  <td>●</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+
+              </table>
+
+            </div>
+
+            <div class="btn_g">
+              <a href="javascript:void(0);">
+                <div class="btn">
+                  이력 자세히 보기
+                </div>
+              </a>
+              <a href="javascript:void(0);">
+                <div class="btn">
+                  의료진 인사말
+
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- 박스 1 끝 -->
+
+
+
+
+
+
+
+      </div>
+    </div>
+
+    <div id="tab2" class="tabcontent">
+      <!-- art1 시작 -->
+
+
+      <div class="sub_art1 inner">
+        <div class="text">
+          <ul>
+            <li>웰키즈만의 목표를 세우며 치료 방법을 개선해 나갑니다.</li>
+            <li>청소년에 맞는 접근법을 이용해여 다양하고 조절된 신체 움직임에 따라 적절한 긴장도를 유지하고 정상적인 움직임을 학습시킵니다.<br>
+              기능적 활동과 균형능력 정도를 분석하여 운동치료법과 함께 치료를 하여 치료 후에도 효과적이고 기능적인 유지 및 개선을 할 수 있도록<br>
+              치료하는것에 중점을 두고 있습니다.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- art1 끝 -->
+
+      <div class="gline inner">
+
+      </div>
+
+      <!-- art2 시작 -->
+
+
+
+      <div class="sub_art2 inner">
+        <div class="text">
+          <span>입원절차 안내</span>
+        </div>
+        <div class="img">
+          <img src="./images/l_art2_image.png" alt="">
+        </div>
+      </div>
+
+
+
+      <!-- art2 끝 -->
+
+      <div class="gline inner">
+
+      </div>
+
+      <!-- art3시작 -->
+
+
+      <div class="sub_art3 inner">
+        <div class="text">
+          <span>운영 시간</span>
+        </div>
+        <div class="img">
+          <img src="./images/l_art3_image.png" alt="">
+        </div>
+      </div>
+
+
+
+      <!-- art3끝 -->
+
+      <div class="gline inner">
+
+      </div>
+
+      <!-- art4시작 -->
+
+
+      <div class="sub_art4 inner">
+        <div class="text">
+          <span>문의 전화 및 팩스</span>
+        </div>
+        <div class="img">
+          <img src="./images/l_art4_image.png" alt="">
+        </div>
+      </div>
+
+
+
+      <!-- art4끝 -->
+    </div>
+
+    
+  </div>
+
+  <!-- 라디오 끝 -->
+
+  <!-- art1 닥터그룹 시작 -->
+
+  <!-- art1 닥터그룹 끝 -->
+
+  <!-- 푸터 시작 -->
+  <div class="foot wrap">
+
+    <div class="logo">
+      <img src="./images/footer_logo.png" alt="">
+    </div>
+    <p class="adress">주소: 03030 서울특별시 종로구 발산로 100 (입석로 28) 대표전화:1588-1588 홈페이지 의견접수</p>
+    <p>COPYRIGHT 2020 WELLKIDS HOSPITAL. ALL RIGHTS RESERVED</p>
+
+    <div class="container">
+      <div class="foot_left_image">
+        <img src="./images/footer_icon1.png" alt="">
+        <span>정보보호관리체계(ISMS)인증</span>
+      </div>
+      <div class="foot_right_image">
+        <img src="./images/footer_icon2.png" alt="">
+        <span class="last">저자의무기록시스템(EMR)인증</span>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

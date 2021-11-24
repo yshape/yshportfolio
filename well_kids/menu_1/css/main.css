@@ -1,0 +1,362 @@
+/* 공통부분 */
+/* 에스코어 4 레귤러 */
+@font-face {
+  font-family: 'S-CoreDream-4Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 에스코어 5 미들 */
+@font-face {
+  font-family: 'S-CoreDream-5Medium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 에스코어 6 볼드 */
+@font-face {
+  font-family: 'S-CoreDream-6Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 사용 색상 */
+
+/* #3B3B3B */
+
+* {}
+
+.inner {
+  width: 1200px;
+  margin: 0 auto;
+  font-family: 'S-CoreDream-6Bold';
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+
+}
+
+.wrap {
+  width: 1900px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* header 시작 */
+
+header {
+  height: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .logo {}
+
+/* header 끝 */
+
+/* nav 시작 */
+
+nav {
+  height: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul {}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 90px;
+}
+
+nav ul li:first-child {
+  margin-left: 0px;
+}
+
+nav ul li a {
+  color: #3B3B3B;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #3A4C9F;
+}
+
+nav ul li::after {
+  display: block;
+  content: "";
+  width: 30px;
+  height: 3px;
+  background-color: #166ab9af;
+  transform: translateX(20px) translateY(-22px) rotateY(0deg);
+  transition: .3s;
+  border-radius: 10px;
+  opacity: 0;
+  perspective: 100px;
+}
+
+nav ul li:nth-child(3):after {
+  display: block;
+  content: "";
+  width: 30px;
+  height: 3px;
+  background-color: #166ab9a4;
+  transform: translateX(80px) translateY(-22px) rotateY(0deg);
+  transition: .3s;
+  border-radius: 10px;
+  opacity: 0;
+  perspective: 100px;
+}
+
+
+
+nav ul li:hover::after {
+  /* display: none; */
+  transform: translateX(20px) translateY(-32px) rotateY(180deg);
+  opacity: 1;
+
+
+}
+
+nav ul li:nth-child(3):hover:after {
+  /* display: none; */
+  transform: translateX(80px) translateY(-32px) rotateY(180deg);
+  opacity: 1;
+
+}
+
+
+/* nav 끝 */
+
+/* 타이틀 시작 */
+
+.main img {
+  margin-bottom: -2px;
+}
+
+.title {
+  position: relative;
+  height: 150px;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.title .text {
+  position: absolute;
+  font-size: 35px;
+  font-family: 'S-CoreDream-5Medium';
+}
+
+.title .text span {
+  color: #1689FC;
+}
+
+.title .sub_title {
+  position: absolute;
+  top: 20px;
+  left: 370px;
+  display: flex;
+  align-items: center;
+}
+
+.title .sub_title .item {
+  margin-right: 20px;
+}
+
+.title .sub_title a {
+  font-family: 'S-CoreDream-5Medium';
+  font-size: 14px;
+  color: #3B3B3B;
+
+}
+
+/* 타이틀 끝 */
+
+
+/* art1시작 */
+
+.art1 {
+}
+
+
+
+/* art1끝 */
+
+
+
+
+
+
+/* art2시작 */
+
+.art2 {
+  margin-bottom: 50PX;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 1920px;
+  height: 500px;
+  object-fit: cover;
+}
+
+
+.swiper {
+  width: 1200px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.mySwiper2 {
+  /* height: 80%;
+  width: 100%; */
+}
+
+.mySwiper {
+  height: 250px;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+/* art2끝 */
+
+
+
+
+
+
+
+
+/* art3시작 */
+
+
+/* art3끝 */
+
+
+
+
+/* 닥터그룹 끝 */
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer 시작  */
+
+.foot {
+
+  display: flex;
+  margin-top: 110px;
+  background-color: #FAFAFA;
+  height: 300px;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  color: #6f6f6f;
+  /* display: none; */
+}
+
+.foot .logo {
+  margin-top: 20px;
+}
+
+.foot p {
+  margin-top: 20px;
+}
+
+.foot .adress {
+  font-weight: 700;
+}
+
+.foot .container {
+  height: 100px;
+  display: flex;
+  margin-top: 20px;
+}
+
+.foot .container .foot_left_image {
+  display: flex;
+  align-items: center;
+}
+
+.foot .container .foot_right_image {
+  display: flex;
+  align-items: center;
+}
+
+.foot span {
+  margin: 0 20px;
+}
+
+.foot .last {
+  margin-right: 0;
+}
+
+
+/* footer 끝 */

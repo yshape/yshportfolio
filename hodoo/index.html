@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 리셋.css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link href="images/favicon.png" rel="icon">
+
+  <title>호두 잉글리시 어학원</title>
+</head>
+
+
+
+
+
+
+<body>
+
+
+  <!-- 헤더 시작 -->
+  <!-- TOP BTN[S] -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+<a id="MOVE_TOP_BTN" href="#">
+  <img src="./images/up_icon.png" alt="">
+</a>
+<style>
+a#MOVE_TOP_BTN {
+  position: fixed;
+  right: 2%;
+  bottom: 50px;
+  display: none;
+  z-index: 10;
+}
+</style>
+<script>
+  $(function() {
+      $(window).scroll(function() {
+          if ($(this).scrollTop() > 500) {
+              $('#MOVE_TOP_BTN').fadeIn();
+          } else {
+              $('#MOVE_TOP_BTN').fadeOut();
+          }
+      });
+      
+      $("#MOVE_TOP_BTN").click(function() {
+          $('html, body').animate({
+              scrollTop : 0
+          }, 400);
+          return false;
+      });
+  });
+</script>
+<!-- TOP BTN[E] -->
+
+
+  <header class="inner">
+
+    <div class="logo_box">
+      <a href="./index.html">
+        <img src="./images/logo.png" alt="">
+      </a>
+    </div>
+
+    <div class="nav">
+      <ul>
+        <li><a href="../hodoo/brand_menu1/index.html">브랜드 소개</a></li>
+        <li><a href="../hodoo/admission_menu2/index.html">입학 안내</a></li>
+        <li><a href="../hodoo/consult_menu3/index.html">상담예약</a></li>
+        <li><a href="">다운로드</a></li>
+        <li><a href="">학습지원</a></li>
+        <li><a href="" class="orange">이용권 등록</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- 헤더끝 -->
+
+
+  <!-- main 시작 -->
+
+  <div class="main wrap">
+    <img src="./images/main_btn.png" alt="">
+    <img class="obj" src="./images/main_obj.png" alt="">
+  </div>
+
+
+  <!-- main 끝 -->
+
+
+  <!-- art1 시작 -->
+
+
+  <div class="art1 wrap">
+
+    <div class="animation">
+
+      <div class="obj_1">
+        <img src="./images/star.png" alt="">
+      </div>
+
+      <div class="obj_2">
+        <img src="./images/triangle.png" alt="">
+      </div>
+
+      <div class="obj_3">
+        <img src="./images/squre.png" alt="">
+      </div>
+    </div>
+
+    <ul>
+      <li><span>청소년 영어회화 1위</span> 조기영어는</li>
+      <li>호두잉글리쉬 어학원이 책임지겠습니다.</li>
+    </ul>
+
+    <div class="container">
+
+      <div class="art1_box">
+        <img src="./images/art1_box1.png" alt="">
+      </div>
+
+      <div class="art1_box">
+        <img src="./images/art1_box2.png" alt="">
+      </div>
+
+    </div>
+
+    <div class="container2">
+
+      <div class="art1_box">
+        <img src="./images/art1_box3.png" alt="">
+      </div>
+
+      <div class="art1_box">
+        <img src="./images/art1_box4.png" alt="">
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- art1 끝 -->
+
+
+  <!-- art2 시작 -->
+  <div class="art2 inner">
+
+    <ul class="title">
+      <li>호두어학원의 맞춤형 커리큘럼</li>
+      <li>호두어학원의 맞춤형 커리큘럼은 다양한 연령과 학습자 개개인의 학습 환경에 맞추어서 최적의 루트로 <br> 영어 교육을 제공합니다. 맞춤 교육을 통해 효율높은 교육을 실천해보세요.</li>
+    </ul>
+
+    <img src="./images/art2_image.png" alt="">
+  </div>
+
+
+
+
+  <!-- art2 끝 -->
+
+
+
+
+
+  <!-- art3 시작 -->
+  <div class="art3 wrap">
+    <ul class="title">
+      <li>Hodoo Education</li>
+      <li>영어유치부, 사고력 확장 프로그램의 시스템을 기반으로<br>
+        제작되었습니다, 따라서 영어를 익힐 뿐만 아니라 창의적인<br>
+        수업을 진행할 수 있습니다.</li>
+    </ul>
+
+    <!-- art3 컨테이너 시작 -->
+    <input type="checkbox" id="btn">
+    <label for="btn">자세히보기</label>
+    <div class="container">
+
+      <div class="art3_box">
+        <img src="./images/art3_box1_image.png" alt="">
+      </div>
+
+      <div class="art3_box">
+        <img src="./images/art3_box2_image.png" alt="">
+      </div>
+      <div class="art3_box">
+        <img src="./images/art3_box3_image.png" alt="">
+      </div>
+
+    </div>
+    <!-- art3 컨테이너 끝 -->
+
+  </div>
+
+
+
+
+  <!-- art3 끝 -->
+
+
+
+
+
+  <!-- art4 시작 -->
+  <div class="art4 wrap">
+    <ul class="title">
+      <li>NO.1 청소년 교육의 명성을 결과로 증명합니다.</li>
+      <li>호두 어학원은 다년간의 노하우를 통해 우수한 교육생들을 배출했습니다. 근본부터 탄탄한 신뢰있는<br>
+        브랜드로써 고객들에게 최고의 교육 환경을 제공하겠습니다.</li>
+    </ul>
+
+    <div class="check_box">
+      <div class="check1">
+        <img src="./images/check1.png" alt="">
+      </div>
+      <div class="check2">
+        <img src="./images/check2.png" alt="">
+      </div>
+      <div class="check3">
+        <img src="./images/check3.png" alt="">
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+  <!-- art4 끝 -->
+
+
+
+  <!-- footer 시작 -->
+
+  <div class="footer wrap">
+    <div class="footer_text">
+      <ul>
+        <li>고객지원센터 02-542-4021</li>
+        <li>팩스 02-542-2424</li>
+        <li><a href="javascript:void(0);">이용약관</a></li>
+        <li><a href="javascript:void(0);">개인정보처리방침</a></li>
+        <li><a href="javascript:void(0);">패밀리 사이트</a></li>
+        <li class="orange"><a href="javascript:void(0);">체인점 문의</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- footer 끝 -->
+
+  <!-- footer2 시작 -->
+
+
+  <div class="footer2 wrap">
+    <div class="logo_box">
+      <a href="javascript:void(0);">
+      <img src="./images/footer_logo.png" alt="">
+    </a>
+    </div>
+    <div class="footer2_text">
+      <ul>
+        <li>대표이사: 김상혁 주소:[123422] 서울시 강서구 발산동 기흥로 515- 1113호 , (주) 호두잉글리쉬어학원 </li>
+        <li>사업자 등록번호: 220-1232-1113 통신판매 신고번호: 제 2010-서울동탄-0422호 개인정보 책임</li>
+        <li>Copyright ⓒ Hodoo Language Jr. All right reserved.</li>
+      </ul>
+    </div>
+    <div class="icons">
+
+      <a href="javascript:void(0);"><img src="./images/footer_kakao.png" alt="" class="kakao"></a>
+      <a href="javascript:void(0);"><img src="./images/footer_band.png" alt="" class="kakao"></a>
+    </div>
+
+
+    <!-- footer2 끝 -->
+
+</body>
+
+</html>
+
+
+
+<header>
+
+</header>

@@ -1,0 +1,631 @@
+/* 폰트 부분 */
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+.nanumgothic * {
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+/* 폰트 부분 끝 */
+
+/* 자주 쓰는 컬러 */
+
+
+/* 흑회색 #292929 */
+/* 주황색 #FF6000 */
+
+
+/* 컬러 끝 */
+
+
+/* 공통부분 */
+* {}
+
+aside {
+  position: fixed;
+  right: 1%;
+  top: 45%;
+  z-index: 2;
+}
+
+a {
+  text-decoration: none;
+}
+
+.inner {
+  width: 1200px;
+  margin: 0 auto;
+  font-family: 'Nanum Gothic', sans-serif;
+
+}
+
+.wrap {
+  width: 1900px;
+  margin: 0 auto;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 20px;
+
+}
+
+.title {
+  text-align: center;
+}
+
+.title li {
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 30px;
+}
+
+.title li:nth-child(1) {
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 28px;
+}
+
+
+
+
+
+/* 공통부분 끝 */
+
+
+/* 헤더부분 */
+
+
+
+
+header {
+  display: flex;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo_box {
+  margin-left: 20px;
+}
+
+header .nav {
+  font-weight: bold;
+  margin-right: 190px;
+  margin-top: 20px;
+
+}
+
+/* 헤더 네비 부분 */
+
+header .nav {}
+
+header .nav ul {}
+
+header .nav ul li {
+  display: inline-block;
+  text-align: center;
+  margin-left: 50px;
+  color: #292929;
+}
+
+header .nav ul li :first-child {
+  margin-left: 0px;
+}
+
+
+header .nav ul li a {
+  color: #292929;
+}
+
+header .nav ul li a:hover {
+  color: #FF6000;
+}
+
+header .nav .orange {
+  color: #FF6000;
+}
+
+.nav ul li::after {
+  margin-top: 6px;
+  display: inline-block;
+  content: "";
+  width: 1%;
+  height: 2px;
+  background-color: white;
+  transition: .3s;
+}
+
+.nav ul li:hover::after {
+  width: 100%;
+  background-color: #FF6000;
+
+}
+
+
+
+
+
+/* 헤더끝 */
+
+/* main 시작 */
+.main {
+  background: url(../images/main_image.png);
+  height: 850px;
+  position: relative;
+}
+
+.main img {
+  position: absolute;
+  left: calc(50% - 76.64px);
+  bottom: -65px;
+  z-index: 3;
+
+}
+
+.main .obj {
+  position: absolute;
+  left: 759px;
+  top: 350px;
+  animation-name: moving;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes moving {
+  from {}
+
+  to {
+    transform: translateY(-30px);
+  }
+}
+
+
+
+
+/* main 끝 */
+
+/* art1 시작  */
+
+.art1 {
+  position: relative;
+  height: 1613px;
+  background-color: #FFF8E8;
+  text-align: center;
+}
+
+.art1 .obj_1 {
+  position: absolute;
+  right: 55px;
+  top: 60px;
+  animation-name: obj1;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-direction: initial;
+  animation-timing-function: linear;
+}
+
+@keyframes obj1 {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.art1 .obj_2 {
+  position: absolute;
+  bottom: -150px;
+  right: 20px;
+  animation-name: obj2;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-direction: initial;
+  animation-timing-function: linear;
+}
+
+@keyframes obj2 {
+  from {
+    transform: rotate(0deg) scale(.8);
+  }
+
+  to {
+    transform: rotate(360deg)scale(.8);
+  }
+}
+.art1 .obj_3 {
+  position: absolute;
+  top: 742px;
+  left: -130px;
+  animation-name: obj3;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-direction: initial;
+  animation-timing-function: linear;
+}
+
+@keyframes obj3 {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.art1 ul {
+  display: inline-block;
+  margin-top: 150px;
+  font-size: 35px;
+}
+
+.art1 ul li span {
+  color: #4DBED9;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.art1 ul li:nth-child(1) {
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.art1 ul li:nth-child(1)::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 0px;
+  height: 20px;
+  bottom: -4px;
+  left: 10px;
+  background-color: #4DBED9;
+  opacity: .4;
+  transition: .5s;
+  border-radius: 10px;
+
+}
+
+.art1:hover ul li:nth-child(1)::after {
+  width: 395px;
+}
+
+
+.art1 ul li:nth-child(2) {
+  margin-bottom: 75px;
+  opacity: .3;
+  transition: .3s;
+}
+
+.art1:hover ul li:nth-child(2) {
+  opacity: 1;
+}
+
+
+.art1 .container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.art1 .container .art1_box {
+  margin: 0 25px;
+
+}
+
+.art1 .container2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.art1 .container2 .art1_box {
+  margin: 0 25px;
+}
+
+/* art1 끝 */
+
+
+
+
+/* art2 시작 */
+
+
+.art2 {
+  margin-top: 150px;
+  margin-bottom: 100px;
+
+}
+
+
+.art2 ul {
+  margin-left: 20px;
+  margin-bottom: 43px;
+}
+
+
+.art2 img {
+  margin-left: 20px;
+}
+
+.art2 ul li {
+  position: relative;
+}
+
+.art2 ul li:nth-child(1)::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 0px;
+  height: 20px;
+  bottom: -12px;
+  left: 330px;
+  background-color: #F8D100;
+  opacity: .3;
+  transition: .5s;
+  border-radius: 10px;
+
+}
+
+.art2:hover ul li:nth-child(1)::after {
+  width: 522px;
+}
+
+/* art2 끝 */
+
+
+
+
+
+
+/* art3 시작 */
+
+.art3 {
+  position: relative;
+  background-image: url(../images/art3_bgimage.png);
+  border-radius: 100px;
+  padding-bottom: 50px;
+}
+
+.art3 .title {
+  text-align: left;
+  display: inline-block;
+  margin: 150px 0 153px 370px;
+}
+
+
+.art3 .container {
+  margin-left: 350px;
+}
+
+.art3_box {
+  margin-bottom: 50px;
+}
+
+/* art3 끝 */
+
+.art3 #btn {
+  position: absolute;
+  transform: scale(2.8);
+  left: 370px;
+  top: 340px;
+  display: none;
+}
+
+.art3 label {
+  font-size: 14px;
+  position: absolute;
+  left: 370px;
+  top: 340px;
+  cursor: pointer;
+  padding: 10px 14px;
+  border: 2px solid #292929;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: .2s;
+}
+
+.art3 label:hover {
+  background-color: #4DBED9;
+  border: 2px solid #4DBED9;
+  color: white;
+
+}
+
+
+
+.art3 .container {
+  display: none;
+}
+
+#btn:checked~.container {
+  display: block;
+  transition: .3s;
+
+}
+
+
+
+
+/* art4 시작 */
+
+.art4 {
+  position: relative;
+  background-image: url(../images/art4_bgimage.png);
+  height: 772px;
+
+}
+
+.art4 .title {
+  display: inline-block;
+  text-align: center;
+  margin-left: 548px;
+  margin-top: 150px;
+}
+
+
+
+.art4 .check_box {
+  opacity: .1;
+  transition: 1.6s;
+}
+
+.art4:hover .check_box {
+  opacity: 1;
+}
+
+.art4 .check1 {
+  position: absolute;
+  left: 476px;
+  bottom: 224px;
+}
+
+.art4 .check2 {
+  position: absolute;
+  left: 898px;
+  bottom: 239px;
+}
+
+.art4 .check3 {
+  position: absolute;
+  right: 473px;
+  bottom: 189px;
+}
+
+
+.art4 ul li {
+  position: relative;
+}
+
+.art4 ul li:nth-child(1)::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 0px;
+  height: 20px;
+  bottom: -12px;
+  left: -5px;
+  background-color: #F8955A;
+  opacity: .3;
+  transition: .5s;
+  border-radius: 10px;
+
+}
+
+.art4:hover ul li:nth-child(1)::after {
+  width: 437px;
+}
+
+
+
+/* art4 끝 */
+
+
+
+
+/* footer 시작 */
+
+
+.footer {
+  height: 90px;
+  background-color: #F9F9F9;
+  border-bottom: 1px solid #D9D9D9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.footer_text {
+  color: #292929;
+
+  font-size: 16px;
+}
+
+.footer_text ul {}
+
+.footer_text ul li {
+  display: inline-block;
+}
+
+.footer_text ul li:nth-child(1) {
+  font-weight: bold;
+}
+
+.footer_text ul li:nth-child(2) {
+  margin-left: 120px;
+}
+
+.footer_text ul li:nth-child(3) {
+  margin-left: 52px;
+}
+
+.footer_text ul li:nth-child(4) {
+  margin-left: 52px;
+}
+
+.footer_text ul li:nth-child(5) {
+  margin-left: 100px;
+}
+
+.footer_text ul li:nth-child(6) a {
+  color: #FF6000;
+  font-weight: bold;
+  margin-left: 72px;
+  margin-right: 30px;
+}
+
+
+
+.footer_text ul li a {
+  text-decoration: none;
+  color: #292929;
+}
+
+
+/* footer2 끝 */
+
+
+/* footer 끝 */
+
+
+/* footer2 시작 */
+
+
+.footer2 {
+  position: relative;
+  height: 150px;
+  background-color: #F9F9F9;
+  font-size: 14px;
+}
+
+.footer2 .logo_box {
+  position: absolute;
+  top: 35px;
+  left: 370px;
+}
+
+.footer2_text {
+  position: absolute;
+  top: 40px;
+  left: 568px;
+
+}
+
+.footer2 li {
+  color: #B7B7B7;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.footer2 .icons {
+  position: absolute;
+  right: 395px;
+  bottom: 40px;
+}
+
+.footer2 .icons a {
+  margin-right: 20px;
+}

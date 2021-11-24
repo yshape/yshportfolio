@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>밖콕</title>
+    <script src="/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="/bxslide.css">
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <link href="images/favicon.png" rel="icon">
+    <link rel="stylesheet" href="./css/main.css">
+    <style>
+        .container {}
+
+        .list {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+
+        .list .up-on-scroll {
+            margin-top: 20px;
+            transition: transform 2.5s, opacity 2.5s;
+        }
+    </style>
+
+<body>
+
+    <!-- TOP BTN[S] -->
+
+    <a id="MOVE_TOP_BTN" href="#">
+        <img src="./images/up_icon.png" alt="">
+    </a>
+    <style>
+        a#MOVE_TOP_BTN {
+            position: fixed;
+            right: 1%;
+            bottom: 50px;
+            display: none;
+            z-index: 10;
+        }
+    </style>
+    <script>
+        $(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 500) {
+                    $('#MOVE_TOP_BTN').fadeIn();
+                } else {
+                    $('#MOVE_TOP_BTN').fadeOut();
+                }
+            });
+
+            $("#MOVE_TOP_BTN").click(function () {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 400);
+                return false;
+            });
+        });
+    </script>
+    <!-- TOP BTN[E] -->
+
+
+    <div class="container inner">
+        <div class="list">
+            <article class="up-on-scroll">
+                <nav>
+                    <div class="logobox">
+                        <a href="javascript:void(0);"><img src="./images/logo.png" alt=""></a>
+                    </div>
+                    <ul>
+                        <li><a href="javascript:void(0);">트래블 캠페인</a></li>
+                        <li><a href="javascript:void(0);">FAQ</a></li>
+                    </ul>
+                </nav>
+                <div class="art1">
+                    <div class="mokupimg">
+                        <img src="./images/mokup.png" alt="">
+                    </div>
+                    <div class="mokupvideo">
+                        <video src="./images/mokupvideo.mp4" autoplay muted loop preload="auto"></video>
+                    </div>
+                    <div class="btngroup">
+                        <div class="btn"><a href="javascript:void(0);"><img src="./images/art1_btn1.png" alt=""></a></div>
+                        <div class="btn"><a href="javascript:void(0);"><img src="./images/art1_btn2.png" alt=""></a></div>
+                    </div>
+                    <img src="./images/art1_bg.png" alt="">
+                </div>
+            </article>
+            <article class="up-on-scroll">
+                <img src="./images/art2_bg.png" alt="">
+            </article>
+            <img src="./images/gline.png" alt="" class="inner">
+            <article class="up-on-scroll">
+                <img src="./images/art3_bg.png" alt="">
+            </article>
+            <img src="./images/gline.png" alt="">
+            <article class="up-on-scroll">
+                <img src="./images/art4_bg.png" alt="">
+            </article>
+            <article class="up-on-scroll">
+                <img src="./images/art5_bg.png" alt="">
+            </article>
+            <article class="up-on-scroll">
+                <div class="art6">
+                    <div class="bxslider">
+                        <div><img src="./images/art6_img1.png" alt=""></div>
+                        <div><img src="./images/art6_img2.png" alt=""></div>
+                    </div>
+                    <script>
+                        $('.bxslider').bxSlider({
+                            auto: true,
+                            autoControls: true,
+                            stopAutoOnClick: true,
+                            pager: true,
+                            slideWidth: 800
+                        });
+                    </script>
+                </div>
+            </article>
+            <footer>
+                <div class="btngroup">
+                    <div class="btn"><a href="javascript:void(0);"><img src="./images/art1_btn1.png" alt=""></a></div>
+                    <div class="btn"><a href="javascript:void(0);"><img src="./images/art1_btn2.png" alt=""></a></div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script>
+        function isElementUnderBottom(elem, triggerDiff) {
+            const {
+                top
+            } = elem.getBoundingClientRect();
+            const {
+                innerHeight
+            } = window;
+            return top > innerHeight + (triggerDiff || 0);
+        }
+
+        function handleScroll() {
+            const elems = document.querySelectorAll('.up-on-scroll');
+            elems.forEach(elem => {
+                if (isElementUnderBottom(elem, -40)) {
+                    elem.style.opacity = "0";
+                    elem.style.transform = 'translateY(100px)';
+
+                } else {
+                    elem.style.opacity = "1";
+                    elem.style.transform = 'translateY(0px)';
+
+                }
+            })
+        }
+
+        window.addEventListener('scroll', handleScroll);
+    </script>
+</body>
+
+</html>

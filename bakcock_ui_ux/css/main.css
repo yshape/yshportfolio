@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'NanumSquareRound';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.inner {
+    width: 1900px;
+    margin: 0 auto;
+}
+
+
+
+nav {
+    height: 60px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav img {
+    transform: translateX(912px);
+}
+
+nav ul {
+    margin-right: 50px;
+}
+
+nav ul li {
+    display: inline-block;
+    font-family: 'NanumSquareRound';
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav ul li:first-child {
+    margin-right: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.art1 {
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.art1 .btngroup {
+    display: flex;
+    width: 430px;
+    justify-content: space-between;
+    height: 69px;
+    position: absolute;
+    bottom: 319px;
+    left: 431px;
+}
+
+.art1 .btngroup .btn {
+    cursor: pointer;
+}
+
+.art1 .btngroup .btn img {
+    transition: .3s;
+}
+
+
+.art1 .btngroup .btn img:hover {
+    transform: scale(1.03);
+}
+
+
+.art1 .mokupimg img {
+    position: absolute;
+    z-index: 5;
+    right: 190px;
+    width: 510px;
+    height: 880px;
+}
+
+.art1 .mokupvideo {}
+
+.art1 .mokupvideo video {
+    width: 380px;
+    height: 700px;
+    position: absolute;
+    z-index: 1;
+    right: 255px;
+    top: 49px;
+
+}
+
+.list .up-on-scroll {
+    margin-bottom: 20px;
+}
+
+.art6 {
+    width: 1900px;
+    height: 1000px;
+    background: url(../images/art6_bg.png);
+}
+
+footer {
+    width: 1900px;
+    height: 368px;
+    background: url(../images/footer_bg.png);
+    position: relative;
+}
+
+footer .btngroup {
+    position: absolute;
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    height: 69px;
+    left: 748px;
+    bottom: 150px;
+}
+
+footer .btngroup .btn img {
+    transition: .3s;
+}
+
+
+footer .btngroup .btn img:hover {
+    transform: scale(1.02);
+}

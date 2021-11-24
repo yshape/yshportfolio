@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript" src="./js/timeline.js"></script>
+  <link rel="stylesheet" href="./css/timeline.css">
+  <link href="images/favicon.png" rel="icon">
+
+  <title>진흥건설 / 기업정보</title>
+</head>
+
+<body>
+  <!-- 헤더시작 -->
+  <header class="inner">
+    <div class="logo">
+      <a href="../index.html">
+        <img src="./images/header_logo.png" alt="">
+      </a>
+    </div>
+    <!-- 헤더 안 작은 네비 -->
+    <div class="header_nav">
+      <ul>
+        <li><a href="">HOME</a></li>
+        <li><a href="">LOGIN</a></li>
+      </ul>
+    </div>
+  </header>
+  <!-- 헤더 끝 -->
+
+    <!-- TOP BTN[S] -->
+<a id="MOVE_TOP_BTN" href="#">
+  <img src="./images/up_icon.png" alt="">
+</a>
+<style>
+a#MOVE_TOP_BTN {
+  position: fixed;
+  right: 2%;
+  bottom: 50px;
+  display: none;
+  z-index: 5;
+}
+</style>
+<script>
+  $(function() {
+      $(window).scroll(function() {
+          if ($(this).scrollTop() > 500) {
+              $('#MOVE_TOP_BTN').fadeIn();
+          } else {
+              $('#MOVE_TOP_BTN').fadeOut();
+          }
+      });
+      
+      $("#MOVE_TOP_BTN").click(function() {
+          $('html, body').animate({
+              scrollTop : 0
+          }, 400);
+          return false;
+      });
+  });
+</script>
+<!-- TOP BTN[E] -->
+
+
+  <aside>
+    <a href="">
+      <div class="item"><img src="./images/aside1.png" alt=""></div>
+    </a>
+    <a href="">
+      <div class="item"><img src="./images/aside2.png" alt=""></div>
+    </a>
+    <a href="">
+      <div class="item"><img src="./images/aside3.png" alt=""></div>
+    </a>
+  </aside>
+
+
+  <!-- 네비 시작 -->
+  <nav class="wrap">
+    <ul>
+      <li class="main">
+        <a class="first" href="">사업분야</a>
+        <ul class="sub">
+          <a href="">
+            <li>기업정보</li>
+          </a>
+          <a href="">
+            <li>CEO</li>
+          </a>
+          <a href="">
+            <li>VISION</li>
+          </a>
+          <a href="">
+            <li>연혁</li>
+          </a>
+          <a href="">
+            <li>주요사업</li>
+          </a>
+        </ul>
+      </li>
+      <li class="main">
+        <a class="first" href="">홍보센터</a>
+        <ul class="sub">
+          <a href="">
+            <li>웹진</li>
+          </a>
+          <a href="">
+            <li>영상 홍보관</li>
+          </a>
+          <a href="">
+            <li>진흥 뉴스</li>
+          </a>
+          <a href="">
+            <li>브로슈어</li>
+          </a>
+          <a href="">
+            <li>보도자료</li>
+          </a>
+        </ul>
+      </li>
+      <li class="main">
+        <a class="first" href="">인재채용</a>
+        <ul class="sub">
+          <a href="">
+            <li>공개채용</li>
+          </a>
+          <a href="">
+            <li>인재개발원</li>
+          </a>
+          <a href="">
+            <li>일반사항</li>
+          </a>
+        </ul>
+
+      </li>
+      <li class="main">
+        <a class="first" href="">고객센터</a>
+        <ul class="sub">
+          <a href="">
+            <li>고객상담실</li>
+          </a>
+          <a href="">
+            <li>공익신고</li>
+          </a>
+          <a href="">
+            <li>전자신문고</li>
+          </a>
+          <a href="">
+            <li>시설개방 안내</li>
+          </a>
+          <a href="">
+            <li>입찰정보</li>
+          </a>
+        </ul>
+
+      </li>
+      <li class="main">
+        <a class="first" href="">투자정보</a>
+        <ul class="sub">
+          <a href="">
+            <li>정보공개제도</li>
+          </a>
+          <a href="">
+            <li>사전정보공표</li>
+          </a>
+          <a href="">
+            <li>법무</li>
+          </a>
+          <a href="">
+            <li>사규</li>
+          </a>
+          <a href="">
+            <li>사업실명제</li>
+          </a>
+        </ul>
+
+      </li>
+    </ul>
+    <div class="nav_search">
+      <input type="text" placeholder=" &nbsp; 검색어를 입력하세요.">
+      <img src="./images/nav_search_icon.png" alt="">
+    </div>
+
+  </nav>
+  <!-- 네비끝 -->
+
+  <!-- 서브네비 시작 -->
+
+
+  <div class="sub_nav inner">
+
+
+    <div class="sub_nav_icon">
+      <a href="../index.html">
+        <img src="./images/sub_nav_icon.png" alt="">
+      </a>
+    </div>
+
+    <div class="sub_nav_li">
+      <ul>
+        <li><a href="">사업분야</a></li>
+        <li><a href="">기업정보</a></li>
+      </ul>
+    </div>
+
+
+
+  </div>
+
+
+  <!-- 서브네비 끝 -->
+
+
+  <!-- 타이틀 시작 -->
+
+  <div class="main_title wrap">
+    <div class="info">
+      <span>기업 정보</span>
+    </div>
+  </div>
+
+  <!-- 타이틀 끝 -->
+
+  <!-- art1 시작 -->
+
+
+  <div class="art1 wrap">
+
+    <div class="title_box">
+      <div class="title">
+        '21세기 글로벌 기업'
+      </div>
+      <div class="title_sub">
+        <ul>
+
+          <li>
+            늘 고객의 마음을 먼저 생각하며<br>
+            21세기 글로벌 건설 리더로써 최선을 다하겠습니다.
+          </li>
+
+          <li>
+            오랜 전통과 역사로 발전을 거듭해온 역사를<br>
+            토대로 존경받는 기업이 되겠습니다.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+
+  <!-- art1 끝 -->
+
+
+  <!-- timeline 시작 -->
+  <div class="timeline_total inner">
+    <div class="title">
+      '진흥기업 연혁'
+    </div>
+    <div class="timeline-container timeline-theme-1">
+      <div class="timeline js-timeline">
+        <div data-time="1968">
+          <img src="./images/1968_history.png" alt="">
+        </div>
+        <div data-time="1988">
+          <img src="./images/1988_history.png" alt="">
+        </div>
+        <div data-time="1996">
+          <img src="./images/1996_history.png" alt="">
+        </div>
+        <div data-time="2009">
+          <img src="./images/2009_history.png" alt="">
+        </div>
+        <div data-time="2019">
+          <img src="./images/2019_history.png" alt="">
+        </div>
+      </div>
+    </div>
+
+    <script>
+      $('.js-timeline').Timeline();
+    </script>
+  </div>
+  <!-- timeline 끝 -->
+
+  <!-- art2 시작 -->
+
+
+  <div class="art2 wrap">
+
+  </div>
+
+
+
+  <!-- art2 끝 -->
+
+
+  <!-- art3 시작 -->
+
+
+
+  <div class="art3 wrap">
+
+
+    <div class="title_box">
+      <div class="title">
+        '경영 원칙'
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- art3 끝 -->
+
+
+  <!-- art4 시작 -->
+
+
+
+  <div class="art4 wrap">
+
+    <div class="title_box">
+      <div class="title">
+        '경영 이념'
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+  <!-- art4 끝 -->
+
+
+  <!-- art5 시작 -->
+
+
+  <div class="art5 wrap">
+
+    <div class="title_box">
+      <div class="title">
+        '지도 및 길찾기'
+      </div>
+      <!-- * 카카오맵 - 지도퍼가기 -->
+      <!-- 1. 지도 노드 -->
+      <div id="daumRoughmapContainer1636331821488" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+      <!--
+	2. 설치 스크립트
+	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+-->
+      <script charset="UTF-8" class="daum_roughmap_loader_script"
+        src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+      <!-- 3. 실행 스크립트 -->
+      <script charset="UTF-8">
+        new daum.roughmap.Lander({
+          "timestamp": "1636331821488",
+          "key": "27xnj",
+          "mapWidth": "400",
+          "mapHeight": "544"
+        }).render();
+      </script>
+    </div>
+
+    <div class="title_box2">
+      <div class="title">
+        '주소 및 교통편'
+      </div>
+    </div>
+
+    <div class="adress">
+
+      <div class="ad_list">
+        <ul>
+          <li>서울지사</li>
+          <li>· 주소 : 서울특별시 용산구 후암로27(후암동)</li>
+          <li>· 안내전화:(TEL) 02-772-1200(FAX)02-754-2977 </li>
+        </ul>
+      </div>
+
+      <div class="ad_list">
+        <ul>
+          <li>본사</li>
+          <li>· 주소 : 인천광역시 연수구 컨벤시아대로 69 807호</li>
+          <li>· 안내전화:(TEL) 02-772-1200(FAX)02-754-2977</li>
+        </ul>
+      </div>
+
+      <div class="ad_list">
+        <ul>
+          <li>교통편 안내</li>
+          <li>· 경부고속도로 → 논산천안고속도로 → <span>진흥기업</span></li>
+          <li>· 관문대로 → 중앙고속도로(부산, 대구) → 관문대로</li>
+          <li> → 중앙고속도로(부산, 대구) → <span>진흥기업</span></li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- art5 끝 -->
+
+  <!-- footer 시작 -->
+
+  <footer class="wrap">
+    <div class="container">
+      <div class="left">
+        <ul>
+          <li>&copy; 2020. JHenc.co.kr. All rights reserved.</li>
+          <li>(주) 진흥기업</li>
+          <li>주소 : 14333 대구 광역시 방촌동 입석로 120 -1</li>
+          <li>사업자 등록번호 : 0123-12-124 -12</li>
+          <li>대표자 : 홍길동</li>
+          <li>TEL : 1600=0000/li>
+        </ul>
+      </div>
+      <div class="right">
+        <ul>
+          <li><a href="">개인정보처리방침</a></li>
+          <li><a href="">쿠키 정책</a></li>
+          <li><a href="">쿠키 설정</a></li>
+          <li><a href="">웹사이트 이용약관</a></li>
+        </ul>
+      </div>
+      <img src="./images/header_logo.png" alt="" class="footer_logo">
+    </div>
+
+  </footer>
+
+
+  <!-- footer 끝 -->
+
+
+</body>
+
+</html>

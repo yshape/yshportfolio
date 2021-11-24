@@ -1,0 +1,393 @@
+/* 공통 부분 시작 */
+.inner {
+  font-family: 'S-CoreDream-6Bold';
+  font-size: 20px;
+  width: 1200px;
+  margin: 0 auto;
+  color: #111111;
+}
+
+.wrap {
+  font-family: 'S-CoreDream-6Bold';
+  font-size: 20px;
+  width: 1900px;
+  margin: 0 auto;
+}
+
+/* 헤더 + 네비 시작 */
+
+header {
+  height: 110px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header a img {}
+
+header a ul {
+  height: 100px;
+}
+
+header ul li {
+  display: inline-block;
+}
+
+header ul li a {
+  font-family: 'S-CoreDream-5Medium';
+  font-size: 14px;
+
+  text-decoration: none;
+  color: #111111;
+}
+
+header ul li:not(:first-child) {
+  margin-left: 75px;
+}
+
+header .nav_box {
+  transform: translateY(10px);
+}
+
+
+header .nav_box a {
+  background-color: #231F20;
+  padding: 6px 36px;
+  color: white;
+  border-radius: 15px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+/* 헤더 + 네비 끝 */
+
+.nav {
+  position: relative;
+  top: 11px;
+}
+
+.nav li::after {
+  display: block;
+  content: "";
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: #a06335;
+  transition: .2s;
+  box-sizing: border-box;
+  transform: translateY(10px);
+}
+
+.nav li::after {}
+
+.nav li:hover a {
+  color: #6F4424;
+}
+
+.nav li:hover::after {
+  width: 100%;
+}
+
+
+
+/* content1 시작 */
+
+/* main시작 */
+
+.main {
+  margin-top: 11px;
+}
+
+/* main끝 */
+
+/* art1 시작 */
+
+.art1 {
+  position: relative;
+  height: 440px;
+  background-color: #EFEFEF;
+}
+
+.art1 .text {
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.art1 .sub_nav {
+  position: absolute;
+  top: 20px;
+  left: 370px;
+}
+
+.art1 .sub_nav a {
+  font-family: 'S-CoreDream-5Medium';
+  font-size: 14px;
+  color: #A8A8A8;
+  /* text-align: ; */
+}
+
+.art1 .sub_nav ul {}
+
+.art1 .sub_nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.art1 .sub_nav ul li a {
+  text-decoration: none;
+}
+
+
+
+/* art1 끝 */
+
+/* art2 시작 */
+
+.art2 {
+  display: flex;
+  justify-content: center;
+  background: url(../images/art2_bgimage.png);
+  height: 500px;
+}
+
+.art2 .text {
+  margin-top: 80px;
+}
+
+
+
+/* art2 끝 */
+
+/* art3 시작 */
+
+
+.art3 {
+  display: flex;
+  justify-content: center;
+  background: url(../images/art3_bgimage.png);
+  height: 500px;
+}
+
+.art3 .text {
+  margin-top: 45px;
+  color: white;
+}
+
+
+
+/* art3 끝 */
+
+/* art4 시작 */
+
+
+.art4 {
+  display: flex;
+  justify-content: center;
+  background: url(../images/art4_bgimage.png);
+  height: 500px;
+}
+
+.art4 .text {
+  margin-top: 83px;
+}
+
+
+/* art4 끝 */
+
+/* art5 시작 */
+
+
+.art5 {
+  position: relative;
+  height: 190px;
+  background-color: #EFEFEF;
+}
+
+.art5 .container {
+  position: absolute;
+  width: 1095px;
+  height: 80px;
+  left: 380px;
+  top: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.art5_link {
+  transition: .2s;
+}
+
+.art5_link:hover {
+  transform: scale(1.05);
+}
+
+/* art5 끝 */
+
+/* art6 시작 */
+
+
+.art6 {
+  position: relative;
+  height: 560px;
+  background: url(../images/art6_bgimage.png);
+}
+
+.art6 .text {
+  position: absolute;
+  right: 397px;
+  bottom: 100px;
+}
+
+.art6 .text li:nth-child(1) {
+  margin-bottom: 25px;
+}
+
+.art6 .text li:nth-child(2) {
+  font-family: 'S-CoreDream-5Medium';
+  font-size: 16px;
+  line-height: 35px;
+}
+
+
+
+/* art6 끝 */
+
+
+/* art7 시작 */
+
+
+.art7 {
+  height: 584px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 73px;
+}
+
+.art7 .text {
+  margin-top: 73px;
+  margin-bottom: 50px;
+}
+
+.art7 table {
+  width: 1000px;
+  height: 360px;
+  text-align: center;
+}
+
+.art7 table tr:first-child {
+  background-color: #E9E9E9;
+  border-top: 3px solid #2F2F2F;
+}
+
+
+
+.art7 table tr {
+  padding: 20px;
+}
+
+.art7 table tr td {
+  color: #707070;
+  font-size: 16px;
+  line-height: 30px;
+  margin: 10px 0;
+  border: 1px solid #D8D8D8;
+  padding: 20px;
+  vertical-align: middle;
+}
+
+.art7 table tr:first-child td {
+  color: #231F20;
+  font-family: 'S-CoreDream-6Bold';
+  font-size: 20px;
+}
+
+.art7 table tr:nth-child(2) td {
+  color: #571C1F;
+}
+
+
+
+
+
+/* art7 끝 */
+
+/* footer 시작 */
+
+footer {
+  width: 1200px;
+  position: relative;
+  margin-top: 50px;
+  height: 300px;
+  background-color: #F2F2F2;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+footer .footer_nav ul {
+  position: absolute;
+  left: 370px;
+  top: 40px;
+}
+
+footer .footer_nav li {
+  display: inline-block;
+  margin-right: 50px;
+  font-size: 16px;
+}
+
+footer .footer_nav ul li a {
+  text-decoration: none;
+  color: #111111;
+}
+
+footer ul li:last-child a {
+  color: #EE4955;
+}
+
+
+
+.line {
+  display: block;
+  content: "";
+  height: 5px;
+  background-color: #DEDEDE;
+  position: absolute;
+  top: 85px;
+}
+
+
+.footer_text {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 50px;
+  left: 360px;
+  font-size: 14px;
+  color: #979797;
+
+}
+
+
+.footer_text ul {
+  margin-left: 75px;
+}
+
+.footer_text ul li {
+  margin: 20px 0;
+}
+
+/* .up {
+  position: absolute;
+  right: 430px;
+  top: 200px;
+} */
+
+/* footer 끝 */

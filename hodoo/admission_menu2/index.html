@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 리셋.css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link href="images/favicon.png" rel="icon">
+
+  <title>호두 잉글리시 / 입학안내</title>
+</head>
+
+<body>
+  <!-- TOP BTN[S] -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+<a id="MOVE_TOP_BTN" href="#">
+  <img src="./images/up_icon.png" alt="">
+</a>
+<style>
+a#MOVE_TOP_BTN {
+  position: fixed;
+  right: 2%;
+  bottom: 50px;
+  display: none;
+  z-index: 10;
+}
+</style>
+<script>
+  $(function() {
+      $(window).scroll(function() {
+          if ($(this).scrollTop() > 500) {
+              $('#MOVE_TOP_BTN').fadeIn();
+          } else {
+              $('#MOVE_TOP_BTN').fadeOut();
+          }
+      });
+      
+      $("#MOVE_TOP_BTN").click(function() {
+          $('html, body').animate({
+              scrollTop : 0
+          }, 400);
+          return false;
+      });
+  });
+</script>
+<!-- TOP BTN[E] -->
+  <!-- 헤더 시작 -->
+
+  <header class="inner">
+
+    <div class="logo_box">
+      <a href="../index.html">
+        <img src="./images/logo.png" alt="">
+      </a>
+    </div>
+
+
+    <div class="nav">
+      <ul>
+        <li><a href="../brand_menu1/index.html">브랜드 소개</a></li>
+        <li><a href="./index.html" style="color: #F8955A;">입학 안내</a></li>
+        <li><a href="../consult_menu3/index.html">상담예약</a></li>
+        <li><a href="javascript:void(0);">다운로드</a></li>
+        <li><a href="javascript:void(0);">학습지원</a></li>
+        <li><a href="javascript:void(0);" class="orange">이용권 등록</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- 메인 시작 -->
+
+  <div class="main wrap">
+    <div class="text">
+      입학 안내
+    </div>
+  </div>
+
+  <!-- 메인 끝 -->
+
+
+  <!-- sub_nav 시작 -->
+
+
+  <div class="sub inner">
+
+    <div class="icon">
+      <a href="../index.html">
+        <img src="./images/sub_nav_icon.png" alt="">
+      </a>
+    </div>
+
+    <div class="text">
+      <ul>
+        <li><a href="../admission_menu2/index.html">입학 안내</a></li>
+        <!-- <li><a href="">상담 예약</a></li> -->
+      </ul>
+    </div>
+  </div>
+
+  <!-- sub_nav 끝 -->
+
+  <!-- art1 시작 -->
+
+
+  <div class="art1 inner">
+
+
+    <div class="title_group">
+
+      <div class="icon">
+        <img src="./images/art1_title_icon.png" alt="">
+      </div>
+
+      <div class="title">
+        호두 어학원의 입학 절차는 어떻게 되나요?
+      </div>
+
+
+    </div>
+
+    <div class="oline"></div>
+
+    <div class="step_box">
+
+      <!-- 박스 1 시작 -->
+
+      <div class="box">
+
+        <div class="image">
+          <img src="./images/art1_box1_image.png" alt="">
+        </div>
+
+        <div class="text">
+          <ul>
+            <li><span>Step 01 </span><span>상담예약</span></li>
+            <li>입학을 위한 상담을 진행합니다. 먼저 원하는 지점을 선택한 뒤 담당자가<br>
+              배정이 되어 유선연락 혹은 대면으로 진행됩니다.</li>
+            <li>
+              <a href="../consult_menu3/index.html">
+                <div class="btn">
+                  예약하기
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="gline">
+
+      </div>
+
+
+      <!-- 박스 2 시작 -->
+
+      <div class="box">
+
+        <div class="image">
+          <img src="./images/art1_box2_image.png" alt="">
+        </div>
+
+        <div class="text">
+          <ul>
+            <li><span>Step 02 </span><span>상담진행</span></li>
+            <li>방문 혹은 유선으로 진행이 됩니다. 담당 스탭과 학생의 전반적인 경험을<br>
+              통해 커리큘럼과 학부생 생활 등의 자세한 설계가 진행됩니다.</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="gline">
+
+      </div>
+
+
+      <!-- 박스 3 시작 -->
+
+      <div class="box">
+
+        <div class="image">
+          <img src="./images/art1_box3_image.png" alt="">
+        </div>
+
+        <div class="text">
+          <ul>
+            <li><span>Step 03 </span><span>레벨 테스트</span></li>
+            <li>학원 내 자체개발 진단 테스트(Hodoo placement Test)를 통해 정확한<br>
+              실력측정이 진행됩니다. <div class="point">※ 테스트 기반 상위 클래스 수강 가능</div></li>
+            <li>
+                <div class="b_btn">
+                  단계확인
+                </div>
+                <div class="test">
+                  <img src="./images/test_image.png" alt="">
+                </div>
+            </li>
+            <li>
+             
+            </li>
+
+          </ul>
+    
+
+        </div>
+
+      </div>
+
+      <div class="gline">
+
+      </div>
+
+
+      <!-- 박스 4 시작 -->
+
+      <div class="box">
+
+        <div class="image">
+          <img src="./images/art1_box4_image.png" alt="">
+        </div>
+
+        <div class="text">
+          <ul>
+            <li><span>Step 04 </span><span>반 배정</span></li>
+            <li>상담 결과와 테스트 결과를 바탕으로 적합한 반 편성이 되며 상세 프로그램과 <br>
+              학원 생활, 관리 시스템에 대한 정보를 제공해 드립니다.</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="gline">
+
+      </div>
+
+
+      <!-- 박스 5 시작 -->
+
+      <div class="box">
+
+        <div class="image">
+          <img src="./images/art1_box5_image.png" alt="">
+        </div>
+
+        <div class="text">
+          <ul>
+            <li><span>Step 05 </span><span>등록 완료</span></li>
+            <li>모든 스탭이 끝나고 온라인,오프라인 수업에 대한 전반적인 과정과 해당 교재를<br>
+              구입하게 되고 자체 내규 카드를 발급 받습니다.</li>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="gline">
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- art1 끝 -->
+
+
+
+
+
+
+  <!-- art2 시작 -->
+
+
+<div class="art2 inner">
+
+
+  <div class="title_group">
+
+    <div class="icon">
+      <img src="./images/art2_title_icon.png" alt="">
+    </div>
+    <div class="title">
+      입학 관련 FAQ
+    </div>
+  </div>
+  <div class="bline">
+  </div>
+
+  <div class="faq">
+
+    <ul>
+
+      <li>
+        <img src="./images/question_icon.png" alt="">         
+        <input id="tap1" type="checkbox">
+        <label for="tap1">영어학원 정식 과정은 처음인데 잘 적응할 수 있을까요?</label>
+        <div class="lline">
+
+        </div>
+        <img class="answer" src="./images/art2_box1_answer.png" alt="">
+      </li>
+
+      
+      <li>
+        <img src="./images/question_icon.png" alt="">         
+        <input id="tap2" type="checkbox">
+        <label for="tap2">호두 어학원의 특별한 장점이 있나요?</label>
+        <div class="lline">
+
+        </div>
+        <img class="answer" src="./images/art2_box2_answer.png" alt="">
+      </li>
+
+
+      <li>
+        <img src="./images/question_icon.png" alt="">         
+        <input id="tap3" type="checkbox">
+        <label for="tap3">원어민 강사진의 채용 조건이 궁금해요.</label>
+        <div class="lline">
+
+        </div>
+        <img class="answer" src="./images/art2_box3_answer.png" alt="">
+      </li>
+
+
+      <li>
+        <img src="./images/question_icon.png" alt="">         
+        <input id="tap4" type="checkbox">
+        <label for="tap4">학습의 평가 및 성취는 어떤식으로 평가되나요?</label>
+        <div class="lline">
+
+        </div>
+        <img class="answer" src="./images/art2_box4_answer.png" alt="">
+      </li>
+
+
+      <li>
+        <img src="./images/question_icon.png" alt="">         
+        <input id="tap5" type="checkbox">
+        <label for="tap5">강의 커리큘럼 중도 변경이 가능할까요?</label>
+        <div class="lline">
+
+        </div>
+        <img class="answer" src="./images/art2_box5_answer.png" alt="">
+      </li>
+    </ul>
+
+
+  </div>
+
+
+
+</div>
+  <!-- art2 끝 -->
+
+
+
+
+
+
+
+  <!-- footer 시작 -->
+
+  <div class="footer wrap">
+    <div class="footer_text">
+      <ul>
+        <li>고객지원센터 02-542-4021</li>
+        <li>팩스 02-542-2424</li>
+        <li><a href="javascript:void(0);">이용약관</a></li>
+        <li><a href="javascript:void(0);">개인정보처리방침</a></li>
+        <li class="orange"><a href="javascript:void(0);">패밀리 사이트</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- footer 끝 -->
+
+  <!-- footer2 시작 -->
+
+
+  <div class="footer2 wrap">
+    <div class="logo_box">
+      <img src="./images/footer_logo.png" alt="">
+    </div>
+    <div class="footer2_text">
+      <ul>
+        <li>대표이사: 김상혁 주소:[123422] 서울시 강서구 발산동 기흥로 515- 1113호 , (주) 호두잉글리쉬어학원 </li>
+        <li>사업자 등록번호: 220-1232-1113 통신판매 신고번호: 제 2010-서울동탄-0422호 개인정보 책임</li>
+        <li>Copyright ⓒ Hodoo Language Jr. All right reserved.</li>
+      </ul>
+    </div>
+
+    <div class="icons">
+
+      <a href="javascript:void(0);"><img src="./images/footer_kakao.png" alt="" class="kakao"></a>
+      <a href="javascript:void(0);"><img src="./images/footer_band.png" alt="" class="kakao"></a>
+    </div>
+  </div>
+
+
+  <!-- footer2 끝 -->
+
+
+</body>
+
+
+</html>

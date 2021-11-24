@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="/total/font.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link href="images/favicon.png" rel="icon">
+  <script src="./js/topbtn.js"></script>
+  <script src="/jquery.min.js"></script>
+  <script src="./js/main.js"></script>
+
+  <title>더 착한커피 / 맴버십</title>
+</head>
+
+
+<body>
+  <!-- 탑메뉴 버튼 -->
+  <!-- TOP BTN[S] -->
+  <a id="MOVE_TOP_BTN" href="#">
+    <img src="./images/up_icon.png" alt="">
+  </a>
+  <style>
+    a#MOVE_TOP_BTN {
+      position: fixed;
+      right: 2%;
+      bottom: 50px;
+      display: none;
+      z-index: 10;
+    }
+  </style>
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <script>
+    $(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 500) {
+          $('#MOVE_TOP_BTN').fadeIn();
+        } else {
+          $('#MOVE_TOP_BTN').fadeOut();
+        }
+      });
+
+      $("#MOVE_TOP_BTN").click(function () {
+        $('html, body').animate({
+          scrollTop: 0
+        }, 400);
+        return false;
+      });
+    });
+  </script>
+  <!-- TOP BTN[E] -->
+
+  <!-- 헤더 시작 -->
+  <header class="inner">
+    <a href="../index.html"><img src="./images/header_logo.png" alt=""></a>
+    <div class="nav">
+      <ul>
+        <li><a href="javascript:void(0);">KINDCOFFEE</a></li>
+        <li><a href="javascript:void(0);">MENU</a></li>
+        <li><a href="javascript:void(0);">STORE</a></li>
+        <li><a href="../sub/index.html">MEMBERSHIP</a></li>
+        <li><a href="javascript:void(0);">CONTENTS</a></li>
+      </ul>
+    </div>
+    <!-- 가맹문의 박스 -->
+    <div class="nav_box"><a href="javascript:void(0);">가맹문의</a></div>
+
+  </header>
+  <!-- 헤더 종료 -->
+
+  <!-- main 시작 -->
+  <div class="main wrap">
+    <img src="./images/main_image.png" alt="">
+  </div>
+
+
+  <!-- art1 시작 -->
+
+
+  <!-- 타이틀 -->
+
+  <div class="title wrap">
+
+  </div>
+
+  <!-- 타이틀 끝 -->
+
+
+
+  <div class="art1 wrap">
+
+    <div class="text inner">
+      메뉴
+    </div>
+
+    <div class="sub_nav">
+      <ul>
+        <li>
+          <a href="../index.html">
+            <img src="./images/home_icon.png" alt="">
+          </a>
+        </li>
+        <li><a href="../index.html">home</a> </li>
+        <li>
+          <a href="javascript:void(0);">
+            <img src="./images/arrow.png" alt="">
+          </a>
+        </li>
+        <li><a href="javascript:void(0);">menu</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- art1 끝 -->
+
+  <!-- art2 시작 -->
+  <div class="art2 wrap">
+    <div class="container">
+      <ul class="tab_title">
+        <li class="on">커피</li>
+        <li>음료</li>
+        <li>푸드</li>
+
+      </ul>
+      <div class="tab_cont">
+
+
+        <div class="on tapbtn">
+
+
+          <!-- 1번째 컨테이너 -->
+
+          <article class="item_container">
+
+            <!-- 인포 (짤막한설명) -->
+            <article class="info">
+              <img src="./images/menu_info_1.png" alt="">
+            </article>
+
+
+            <article class="item">
+              <article class="tag_group">
+                <img src="./images/tag_1.png" alt="">
+                <!-- <img src="./images/tag_2.png" alt=""> -->
+                <img src="./images/tag_3.png" alt="">
+              </article>
+
+              <a href="javascript:void(0);">
+                <article class="img_box">
+                  <img src="./images/menu_coffee_1.png" alt="">
+                </article>
+                <article class="text_box">
+                  나이트로 바닐라 크림
+                </article>
+              </a>
+            </article>
+
+
+            <article class="item">
+              <article class="tag_group">
+                <img src="./images/tag_1.png" alt="">
+                <!-- <img src="./images/tag_2.png" alt=""> -->
+                <img src="./images/tag_3.png" alt="">
+              </article>
+
+              <a href="javascript:void(0);">
+                <article class="img_box">
+                  <img src="./images/menu_coffee_2.png" alt="">
+                </article>
+                <article class="text_box">
+                  나이트로 콜드 브루
+                </article>
+              </a>
+            </article>
+
+            <article class="item">
+              <article class="tag_group">
+                <img src="./images/tag_1.png" alt="">
+                <img src="./images/tag_2.png" alt="">
+                <!-- <img src="./images/tag_3.png" alt=""> -->
+              </article>
+
+              <a href="javascript:void(0);">
+                <article class="img_box">
+                  <img src="./images/menu_coffee_3.png" alt="">
+                </article>
+                <article class="text_box">
+                  돌체 콜드 브루
+                </article>
+              </a>
+            </article>
+
+            <article class="item">
+              <article class="tag_group">
+                <!-- <img src="./images/tag_1.png" alt=""> -->
+                <img src="./images/tag_2.png" alt="">
+                <!-- <img src="./images/tag_3.png" alt=""> -->
+              </article>
+
+              <a href="javascript:void(0);">
+                <article class="img_box">
+                  <img src="./images/menu_coffee_4.png" alt="">
+                </article>
+                <article class="text_box">
+                  바닐라 크림 콜드 브루
+                </article>
+              </a>
+            </article>
+
+            <article class="item">
+              <article class="tag_group">
+                <!-- <img src="./images/tag_1.png" alt=""> -->
+                <img src="./images/tag_2.png" alt="">
+                <!-- <img src="./images/tag_3.png" alt=""> -->
+              </article>
+
+              <a href="javascript:void(0);">
+                <article class="img_box">
+                  <img src="./images/menu_coffee_5.png" alt="">
+                </article>
+                <article class="text_box">
+                  제주 말차 콜드 브루
+                </article>
+              </a>
+            </article>
+
+            <article class="item">
+              <article class="tag_group">
+                <!-- <img src="./images/tag_1.png" alt=""> -->
+                <img src="./images/tag_2.png" alt="">
+                <img src="./images/tag_3.png" alt="">
+              </article>
+
+              <a href="javascript:void(0);">
+                <article class="img_box">
+                  <img src="./images/menu_coffee_6.png" alt="">
+                </article>
+                <article class="text_box">
+                  콜드 브루
+                </article>
+              </a>
+            </article>
+
+
+
+            <!-- 2번째 컨테이너 -->
+            <article class="item_container">
+
+              <!-- 인포 (짤막한설명) -->
+              <article class="info">
+                <img src="./images/menu_info_2.png" alt="">
+              </article>
+
+
+              <article class="item">
+                <article class="tag_group">
+                  <!-- <img src="./images/tag_1.png" alt=""> -->
+                  <img src="./images/tag_2.png" alt="">
+                  <!-- <img src="./images/tag_3.png" alt=""> -->
+                </article>
+
+                <a href="javascript:void(0);">
+                  <article class="img_box">
+                    <img src="./images/menu_coffee_7.png" alt="">
+                  </article>
+                  <article class="text_box">
+                    돌체 라떼
+                  </article>
+                </a>
+              </article>
+
+              <article class="item">
+                <article class="tag_group">
+                  <!-- <img src="./images/tag_1.png" alt=""> -->
+                  <img src="./images/tag_2.png" alt="">
+                  <!-- <img src="./images/tag_3.png" alt=""> -->
+                </article>
+
+                <a href="javascript:void(0);">
+                  <article class="img_box">
+                    <img src="./images/menu_coffee_8.png" alt="">
+                  </article>
+                  <article class="text_box">
+                    아이스 돌체 라떼
+                  </article>
+                </a>
+              </article>
+
+
+              <article class="item">
+                <article class="tag_group">
+                  <!-- <img src="./images/tag_1.png" alt=""> -->
+                  <img src="./images/tag_2.png" alt="">
+                  <!-- <img src="./images/tag_3.png" alt=""> -->
+                </article>
+
+                <a href="javascript:void(0);">
+                  <article class="img_box">
+                    <img src="./images/menu_coffee_9.png" alt="">
+                  </article>
+                  <article class="text_box">
+                    카페 라떼
+                  </article>
+                </a>
+              </article>
+
+              <article class="item">
+                <article class="tag_group">
+                  <!-- <img src="./images/tag_1.png" alt=""> -->
+                  <img src="./images/tag_2.png" alt="">
+                  <!-- <img src="./images/tag_3.png" alt=""> -->
+                </article>
+
+                <a href="javascript:void(0);">
+                  <article class="img_box">
+                    <img src="./images/menu_coffee_10.png" alt="">
+                  </article>
+                  <article class="text_box">
+                    아이스 카페 라떼
+                  </article>
+                </a>
+              </article>
+
+              <article class="item">
+                <article class="tag_group">
+                  <!-- <img src="./images/tag_1.png" alt=""> -->
+                  <img src="./images/tag_2.png" alt="">
+                  <!-- <img src="./images/tag_3.png" alt=""> -->
+                </article>
+
+                <a href="javascript:void(0);">
+                  <article class="img_box">
+                    <img src="./images/menu_coffee_11.png" alt="">
+                  </article>
+                  <article class="text_box">
+                    바닐라 플랫 화이트
+                  </article>
+                </a>
+              </article>
+
+              <article class="item">
+                <article class="tag_group">
+                  <img src="./images/tag_1.png" alt="">
+                  <!-- <img src="./images/tag_2.png" alt=""> -->
+                  <!-- <img src="./images/tag_3.png" alt=""> -->
+                </article>
+
+                <a href="javascript:void(0);">
+                  <article class="img_box">
+                    <img src="./images/menu_coffee_12.png" alt="">
+                  </article>
+                  <article class="text_box">
+                    시트러스 에스프레소
+                  </article>
+                </a>
+              </article>
+
+              <article class="item">
+                <article class="tag_group">
+                  <!-- <img src="./images/tag_1.png" alt=""> -->
+                  <!-- <img src="./images/tag_2.png" alt=""> -->
+                  <img src="./images/tag_3.png" alt="">
+                </article>
+
+                <a href="javascript:void(0);">
+                  <article class="img_box">
+                    <img src="./images/menu_coffee_13.png" alt="">
+                  </article>
+                  <article class="text_box">
+                    에스프레소 콘 파나
+                  </article>
+                </a>
+              </article>
+
+
+            </article>
+          </article>
+        </div>
+
+
+
+
+
+
+
+
+
+        <!-- -----------------------2번째 음료탭 -->
+
+        <div class="tapbtn">
+
+          <!-- 음료탭의 1번째 컨테이너 -->
+
+          <article class="item_container">
+
+            <!-- 인포 (짤막한설명) -->
+            <article class="info">
+              <img src="./images/menu_info_3.png" alt="">
+            </article>
+
+
+            <article class="item">
+              <article class="tag_group">
+                <img src="./images/tag_1.png" alt="">
+                <!-- <img src="./images/tag_2.png" alt=""> -->
+                <!-- <img src="./images/tag_3.png" alt=""> -->
+              </article>
+
+              <a href="javascript:void(0);">
+                <article class="img_box">
+                  <img src="./images/menu_drink_1.png" alt="">
+                </article>
+                <article class="text_box">
+                  딸기 딜라이트 요거트 블렌디드
+                </article>
+              </a>
+            </article>
+
+            <article class="item">
+              <article class="tag_group">
+                <img src="./images/tag_1.png" alt="">
+                <!-- <img src="./images/tag_2.png" alt=""> -->
+                <!-- <img src="./images/tag_3.png" alt=""> -->
+              </article>
+
+              <a href="javascript:void(0);">
+                <article class="img_box">
+                  <img src="./images/menu_drink_2.png" alt="">
+                </article>
+                <article class="text_box">
+                  민트 초콜릿 칩 블렌디드
+                </article>
+              </a>
+            </article>
+
+            <article class="item">
+              <article class="tag_group">
+                <img src="./images/tag_1.png" alt="">
+                <!-- <img src="./images/tag_2.png" alt=""> -->
+                <!-- <img src="./images/tag_3.png" alt=""> -->
+              </article>
+
+              <a href="javascript:void(0);">
+                <article class="img_box">
+                  <img src="./images/menu_drink_3.png" alt="">
+                </article>
+                <article class="text_box">
+                  피치 & 레몬 블렌디드
+                </article>
+              </a>
+            </article>
+
+            <article class="item">
+              <article class="tag_group">
+                <!-- <img src="./images/tag_1.png" alt=""> -->
+                <!-- <img src="./images/tag_2.png" alt=""> -->
+                <!-- <img src="./images/tag_3.png" alt=""> -->
+              </article>
+
+              <a href="javascript:void(0);">
+                <article class="img_box">
+                  <img src="./images/menu_drink_4.png" alt="">
+                </article>
+                <article class="text_box">
+                  스팀 우유
+                </article>
+              </a>
+            </article>
+
+            <article class="item">
+              <article class="tag_group">
+                <!-- <img src="./images/tag_1.png" alt=""> -->
+                <!-- <img src="./images/tag_2.png" alt=""> -->
+                <img src="./images/tag_3.png" alt="">
+              </article>
+
+              <a href="javascript:void(0);">
+                <article class="img_box">
+                  <img src="./images/menu_drink_5.png" alt="">
+                </article>
+                <article class="text_box">
+                  제주 쑥쑥 라떼
+                </article>
+              </a>
+            </article>
+
+            <article class="item">
+              <article class="tag_group">
+                <!-- <img src="./images/tag_1.png" alt=""> -->
+                <!-- <img src="./images/tag_2.png" alt=""> -->
+                <!-- <img src="./images/tag_3.png" alt=""> -->
+              </article>
+
+              <a href="javascript:void(0);">
+                <article class="img_box">
+                  <img src="./images/menu_drink_6.png" alt="">
+                </article>
+                <article class="text_box">
+                  시그니처 핫 초콜릿
+                </article>
+              </a>
+            </article>
+
+            <article class="item">
+              <article class="tag_group">
+                <!-- <img src="./images/tag_1.png" alt=""> -->
+                <!-- <img src="./images/tag_2.png" alt=""> -->
+                <img src="./images/tag_3.png" alt="">
+              </article>
+
+              <a href="javascript:void(0);">
+                <article class="img_box">
+                  <img src="./images/menu_drink_7.png" alt="">
+                </article>
+                <article class="text_box">
+                  카인드 슬래머
+                </article>
+              </a>
+            </article>
+
+            <article class="item">
+              <article class="tag_group">
+                <img src="./images/tag_1.png" alt="">
+                <!-- <img src="./images/tag_2.png" alt=""> -->
+                <img src="./images/tag_3.png" alt="">
+              </article>
+
+              <a href="javascript:void(0);">
+                <article class="img_box">
+                  <img src="./images/menu_drink_8.png" alt="">
+                </article>
+                <article class="text_box">
+                  제주 까망 라떼
+                </article>
+              </a>
+            </article>
+
+
+
+
+            <!-- 음료탭의 2번째 컨테이너 -->
+
+            <article class="item_container">
+
+              <!-- 인포 (짤막한설명) -->
+              <article class="info">
+                <img src="./images/menu_info_4.png" alt="">
+              </article>
+
+
+              <article class="item">
+                <article class="tag_group">
+                  <img src="./images/tag_1.png" alt="">
+                  <!-- <img src="./images/tag_2.png" alt=""> -->
+                  <!-- <img src="./images/tag_3.png" alt=""> -->
+                </article>
+
+                <a href="javascript:void(0);">
+                  <article class="img_box">
+                    <img src="./images/menu_drink_9.png" alt="">
+                  </article>
+                  <article class="text_box">
+                    딸기 딜라이트 요거트 블렌디드
+                  </article>
+                </a>
+              </article>
+
+              <article class="item">
+                <article class="tag_group">
+                  <img src="./images/tag_1.png" alt="">
+                  <!-- <img src="./images/tag_2.png" alt=""> -->
+                  <img src="./images/tag_3.png" alt="">
+                </article>
+
+                <a href="javascript:void(0);">
+                  <article class="img_box">
+                    <img src="./images/menu_drink_10.png" alt="">
+                  </article>
+                  <article class="text_box">
+                    민트 초콜릿 칩 블렌디드
+                  </article>
+                </a>
+              </article>
+
+              <article class="item">
+                <article class="tag_group">
+                  <img src="./images/tag_1.png" alt="">
+                  <!-- <img src="./images/tag_2.png" alt=""> -->
+                  <!-- <img src="./images/tag_3.png" alt=""> -->
+                </article>
+
+                <a href="javascript:void(0);">
+                  <article class="img_box">
+                    <img src="./images/menu_drink_11.png" alt="">
+                  </article>
+                  <article class="text_box">
+                    피치 & 레몬 블렌디드
+                  </article>
+                </a>
+              </article>
+
+              <article class="item">
+                <article class="tag_group">
+                  <!-- <img src="./images/tag_1.png" alt=""> -->
+                  <!-- <img src="./images/tag_2.png" alt=""> -->
+                  <!-- <img src="./images/tag_3.png" alt=""> -->
+                </article>
+
+                <a href="javascript:void(0);">
+                  <article class="img_box">
+                    <img src="./images/menu_drink_12.png" alt="">
+                  </article>
+                  <article class="text_box">
+                    피치 & 레몬 블렌디드
+                  </article>
+                </a>
+              </article>
+
+              <article class="item">
+                <article class="tag_group">
+                  <!-- <img src="./images/tag_1.png" alt=""> -->
+                  <!-- <img src="./images/tag_2.png" alt=""> -->
+                  <!-- <img src="./images/tag_3.png" alt=""> -->
+                </article>
+
+                <a href="javascript:void(0);">
+                  <article class="img_box">
+                    <img src="./images/menu_drink_13.png" alt="">
+                  </article>
+                  <article class="text_box">
+                    피치 & 레몬 블렌디드
+                  </article>
+                </a>
+              </article>
+
+            </article>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <!-------------------------- 3번째 푸드탭 -->
+        <div class="tapbtn">
+
+
+
+          <!-- 푸드탭의 1번째 컨테이너 -->
+
+          <article class="item_container">
+
+            <!-- 인포 (짤막한설명) -->
+            <article class="info">
+              <img src="./images/menu_info_5.png" alt="">
+            </article>
+
+
+            <article class="item">
+              <article class="tag_group">
+                <img src="./images/tag_1.png" alt="">
+                <!-- <img src="./images/tag_2.png" alt=""> -->
+                <!-- <img src="./images/tag_3.png" alt=""> -->
+                <!-- <img src="./images/tag_4.png" alt=""> -->
+                <img src="./images/tag_5.png" alt="">
+              </article>
+
+              <a href="javascript:void(0);">
+                <article class="img_box">
+                  <img src="./images/menu_food_1.png" alt="">
+                </article>
+                <article class="text_box">
+                  쉬림프 코코넛 샐러드 밀 박스
+                </article>
+              </a>
+            </article>
+
+            <article class="item">
+              <article class="tag_group">
+                <!-- <img src="./images/tag_1.png" alt=""> -->
+                <!-- <img src="./images/tag_2.png" alt=""> -->
+                <!-- <img src="./images/tag_3.png" alt=""> -->
+                <!-- <img src="./images/tag_4.png" alt=""> -->
+                <img src="./images/tag_5.png" alt="">
+              </article>
+
+              <a href="javascript:void(0);">
+                <article class="img_box">
+                  <img src="./images/menu_food_2.png" alt="">
+                </article>
+                <article class="text_box">
+                  커리 치킨 샐러드 밀 박스
+                </article>
+              </a>
+            </article>
+
+            <article class="item">
+              <article class="tag_group">
+                <img src="./images/tag_1.png" alt="">
+                <!-- <img src="./images/tag_2.png" alt=""> -->
+                <!-- <img src="./images/tag_3.png" alt=""> -->
+                <!-- <img src="./images/tag_4.png" alt=""> -->
+                <!-- <img src="./images/tag_5.png" alt=""> -->
+              </article>
+
+              <a href="javascript:void(0);">
+                <article class="img_box">
+                  <img src="./images/menu_food_3.png" alt="">
+                </article>
+                <article class="text_box">
+                  B.E.L.T. 샌드위치
+                </article>
+              </a>
+            </article>
+
+            <article class="item">
+              <article class="tag_group">
+                <!-- <img src="./images/tag_1.png" alt=""> -->
+                <!-- <img src="./images/tag_2.png" alt=""> -->
+                <!-- <img src="./images/tag_3.png" alt=""> -->
+                <img src="./images/tag_4.png" alt="">
+                <img src="./images/tag_5.png" alt="">
+              </article>
+
+              <a href="javascript:void(0);">
+                <article class="img_box">
+                  <img src="./images/menu_food_4.png" alt="">
+                </article>
+                <article class="text_box">
+                  단호박 에그 샌드위치
+                </article>
+              </a>
+            </article>
+
+            <article class="item">
+              <article class="tag_group">
+                <!-- <img src="./images/tag_1.png" alt=""> -->
+                <!-- <img src="./images/tag_2.png" alt=""> -->
+                <!-- <img src="./images/tag_3.png" alt=""> -->
+                <img src="./images/tag_4.png" alt="">
+                <!-- <img src="./images/tag_5.png" alt=""> -->
+              </article>
+
+              <a href="javascript:void(0);">
+                <article class="img_box">
+                  <img src="./images/menu_food_5.png" alt="">
+                </article>
+                <article class="text_box">
+                  에그 베이컨 브리오슈 밀 박스
+                </article>
+              </a>
+            </article>
+
+            <article class="item">
+              <article class="tag_group">
+                <img src="./images/tag_1.png" alt="">
+                <!-- <img src="./images/tag_2.png" alt=""> -->
+                <!-- <img src="./images/tag_3.png" alt=""> -->
+                <!-- <img src="./images/tag_4.png" alt=""> -->
+                <img src="./images/tag_5.png" alt="">
+              </article>
+
+              <a href="javascript:void(0);">
+                <article class="img_box">
+                  <img src="./images/menu_food_6.png" alt="">
+                </article>
+                <article class="text_box">
+                  트리플 치즈 크로크무슈
+                </article>
+              </a>
+            </article>
+
+
+
+
+          </article>
+
+
+          <!-- 푸드탭의 2번째 컨테이너 -->
+
+          <article class="item_container">
+
+            <!-- 인포 (짤막한설명) -->
+            <article class="info">
+              <img src="./images/menu_info_6.png" alt="">
+            </article>
+
+
+            <article class="item">
+              <article class="tag_group">
+                <!-- <img src="./images/tag_1.png" alt=""> -->
+                <!-- <img src="./images/tag_2.png" alt=""> -->
+                <img src="./images/tag_3.png" alt="">
+                <img src="./images/tag_4.png" alt="">
+                <!-- <img src="./images/tag_5.png" alt=""> -->
+              </article>
+
+              <a href="javascript:void(0);">
+                <article class="img_box">
+                  <img src="./images/menu_food_7.png" alt="">
+                </article>
+                <article class="text_box">
+                  쿠키 블루베리 잼 머핀
+                </article>
+              </a>
+            </article>
+
+            <article class="item">
+              <article class="tag_group">
+                <!-- <img src="./images/tag_1.png" alt=""> -->
+                <!-- <img src="./images/tag_2.png" alt=""> -->
+                <img src="./images/tag_3.png" alt="">
+                <img src="./images/tag_4.png" alt="">
+                <!-- <img src="./images/tag_5.png" alt=""> -->
+              </article>
+
+              <a href="javascript:void(0);">
+                <article class="img_box">
+                  <img src="./images/menu_food_8.png" alt="">
+                </article>
+                <article class="text_box">
+                  담백한 플레인 베이글
+                </article>
+              </a>
+            </article>
+
+            <article class="item">
+              <article class="tag_group">
+                <!-- <img src="./images/tag_1.png" alt=""> -->
+                <img src="./images/tag_2.png" alt="">
+                <!-- <img src="./images/tag_3.png" alt=""> -->
+                <img src="./images/tag_4.png" alt="">
+                <!-- <img src="./images/tag_5.png" alt=""> -->
+              </article>
+
+              <a href="javascript:void(0);">
+                <article class="img_box">
+                  <img src="./images/menu_food_9.png" alt="">
+                </article>
+                <article class="text_box">
+                  바질 토마토 크림치즈 베이글
+                </article>
+              </a>
+            </article>
+
+            <article class="item">
+              <article class="tag_group">
+                <img src="./images/tag_1.png" alt="">
+                <!-- <img src="./images/tag_2.png" alt=""> -->
+                <!-- <img src="./images/tag_3.png" alt=""> -->
+                <img src="./images/tag_4.png" alt="">
+                <!-- <img src="./images/tag_5.png" alt=""> -->
+              </article>
+
+              <a href="javascript:void(0);">
+                <article class="img_box">
+                  <img src="./images/menu_food_10.png" alt="">
+                </article>
+                <article class="text_box">
+                  트리플 미니 스콘
+                </article>
+              </a>
+            </article>
+
+            <article class="item">
+              <article class="tag_group">
+                <!-- <img src="./images/tag_1.png" alt=""> -->
+                <!-- <img src="./images/tag_2.png" alt=""> -->
+                <!-- <img src="./images/tag_3.png" alt=""> -->
+                <img src="./images/tag_4.png" alt="">
+                <img src="./images/tag_5.png" alt="">
+              </article>
+
+              <a href="javascript:void(0);">
+                <article class="img_box">
+                  <img src="./images/menu_food_11.png" alt="">
+                </article>
+                <article class="text_box">
+                  하트 파이
+                </article>
+              </a>
+            </article>
+
+            <article class="item">
+              <article class="tag_group">
+                <img src="./images/tag_1.png" alt="">
+                <!-- <img src="./images/tag_2.png" alt=""> -->
+                <!-- <img src="./images/tag_3.png" alt=""> -->
+                <!-- <img src="./images/tag_4.png" alt=""> -->
+                <img src="./images/tag_5.png" alt="">
+              </article>
+
+              <a href="javascript:void(0);">
+                <article class="img_box">
+                  <img src="./images/menu_food_12.png" alt="">
+                </article>
+                <article class="text_box">
+                  스모크드 소시지 브레드
+                </article>
+              </a>
+            </article>
+
+
+
+
+          </article>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+
+
+  <!-- art2 끝 -->
+
+  <!-- art3 시작 -->
+
+
+
+
+  <!-- art3 끝 -->
+
+  <!-- art4 시작 -->
+
+
+
+
+
+  <!-- art4 끝 -->
+
+  <!-- art5 시작 -->
+
+
+
+
+
+  <!-- art5 끝 -->
+
+  <!-- art6 시작 -->
+
+
+
+
+  <!-- art6 끝 -->
+
+
+  <!-- art7 시작 -->
+
+
+
+
+
+  <!-- art7 끝 -->
+
+  <!-- footer 시작 -->
+
+  <footer class="wrap">
+    <div class="footer_nav">
+      <ul>
+        <li><a href="javascript:void(0);">오시는 길</a></li>
+        <li><a href="javascript:void(0);">제휴문의</a></li>
+        <li><a href="javascript:void(0);">개인정보처리방침</a></li>
+        <li><a href="javascript:void(0);">이용약관</a></li>
+        <li id="red"><a href="">고객센터 1600-1600</a></li>
+      </ul>
+    </div>
+    <div class="line wrap">
+
+    </div>
+    <div class="footer_text">
+      <img src="./images/footer_logo.png" alt="">
+      <ul>
+        <li>서울시 성동구 성원6길 대표이사 : 김성모</li>
+        <li>사업자 등록번호 206-200-31242 kindcoffee@kind.co.kr</li>
+        <li>Copyright &copy; by kindcoffee, All rights reserved.</li>
+      </ul>
+    </div>
+
+
+  </footer>
+
+  <!-- footer 끝 -->
+
+</body>
+
+</html>

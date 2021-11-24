@@ -1,0 +1,294 @@
+@font-face {
+  font-family: 'HangeulNuri-Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/HangeulNuri-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 폰트 부분 */
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+.nanumgothic * {
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+/* 폰트 부분 끝 */
+
+
+.inner {
+  font-size: 18px;
+  font-family: 'HangeulNuri-Bold';
+  font-weight: lighter;
+  width: 1200px;
+  margin: 0 auto;
+  color: #111111;
+
+}
+
+.wrap {
+  font-size: 18px;
+  font-weight: normal;
+
+  font-family: 'HangeulNuri-Bold';
+  width: 1900px;
+  margin: 0 auto;
+}
+
+
+
+/* 헤더 시작 */
+
+header {
+  left: calc(50% - 600px);
+  position: fixed;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.563);
+  border-radius: 0px 0px 30px 30px;
+  transition: .3s;
+}
+
+header:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+
+
+header:hover > nav ul li a {
+}
+
+header .logo_box {
+  margin-left: 20px;
+}
+
+nav {
+  transform: translateY(10px);
+}
+
+nav ul {
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 80px;
+  padding: 20px;
+
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #222222;
+  box-sizing: border-box;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  color: #199A9A;
+}
+
+
+/* 헤더 끝 */
+footer {
+  /* display: none; */
+}
+/* main 시작 */
+
+.main {
+  position: relative;
+  height: 400px;
+  background: url(../images/main_image.png);
+}
+
+.main .sub_nav {
+  position: absolute;
+  width: 388px;
+  height: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 346px;
+  left: 395px;
+}
+
+.main .sub_nav a {
+  color: #6E6E6E;
+  text-decoration: none;
+}
+
+
+
+/* main 끝 */
+
+.fixed {
+  position: fixed;
+  width: 1900px;
+  left: 2px;
+}
+
+/* art1시작 */
+
+
+.art1 {
+  margin-top: -0px;
+  position: relative;
+  background: url(../images/art1_bgimg.png);
+  height: 650px;
+}
+
+/* art1끝 */
+
+/* art2시작 */
+
+
+.art2 {
+  position: relative;
+  background: url(../images/art2_bgimg.png);
+  height: 650px;
+}
+
+/* .art2 .icon {
+  position: absolute;
+  top: 44px;
+  left: 931px;
+} */
+
+.art2 .info {
+  width: 36px;
+  height: 36px;
+  background: url(../images/info_icon.png);
+  cursor: pointer;
+  position: absolute;
+  top: 44px;
+  left: 931px;
+}
+
+.art2 .info:hover {
+  background: url(../images/info_ficon.png);
+  cursor: pointer;
+}
+
+
+.art2 .youtube {
+  position: absolute;
+  top: 100px;
+  left: calc(50% - 280px);
+  display: none;
+}
+
+.art2 input {
+  display: none;
+}
+
+.art2 input:checked ~ .youtube {
+  display: block;
+}
+
+.art2 input:checked ~ label .info {
+  background: url(../images/info_ficon.png);
+}
+
+iframe {
+  margin-top: 100px;
+  border-radius: 30px;
+}
+/* art2끝 */
+
+
+/* art3 시작 */
+
+
+.art3 {
+  position: relative;
+  height: 750px;
+  background: url(../images/art3_bgimg.png);
+}
+
+
+
+/* art3 끝 */
+
+
+
+/* art4시작 */
+
+
+
+/* art4끝 */
+
+
+
+
+
+
+/* footer시작 */
+
+
+footer {
+  position: relative;
+  height: 340px;
+  background: url(../images/footer_bgimg.png);
+}
+
+footer .text_g1 {
+  position: absolute;
+  top: 50px;
+  left: 551px;
+}
+
+footer .text_g1 ul li {
+  display: inline-block;
+  font-size: 14px;
+}
+
+footer .text_g1 ul li:not(:last-child) {
+margin-right: 50px;
+}
+
+footer .text_g1 ul li a {
+  text-decoration: none;
+  color: #222222;
+}
+
+footer .text_g1 ul li:nth-child(1) a {
+  color: #199A9A;
+
+}
+
+
+
+
+footer .text_g2 {
+  position: absolute;
+  top: 110px;
+  left: 770px;
+}
+
+footer .text_g2 ul li {
+  display: inline-block;
+  font-size: 18px;
+  padding-bottom: 10px;
+  color: #222222;
+}
+
+footer .text_g2 ul li a {
+  text-decoration: none;
+  color: #222222;
+}
+
+footer .text_g2 ul li:not(:last-child) {
+  margin-right: 40px;
+  }
+
+/* footer끝 */
+
+
+
+
+.main,
+.art1 {
+  /* display: none; */
+}

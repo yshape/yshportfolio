@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Jump ui&ux</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link href="images/favicon.png" rel="icon">
+
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body>
+
+  
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="./images/1_main.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="./images/2_Problem.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="./images/3_Journey_Map.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="./images/4_Persona.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="./images/5_Flow_Chart.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="./images/6_Wire frame_1.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="./images/7_Wire frame_2.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="./images/8.Component.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="./images/9.illustration.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="./images/10.join.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="./images/11.username.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="./images/12.diary.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="./images/13.feed.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="./images/14.Setting goals.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="./images/15.challnge.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="./images//16.output.png" alt="">
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      direction: "vertical",
+      slidesPerView: 1,
+      spaceBetween: 30,
+      mousewheel: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 리셋.css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <link href="images/favicon.png" rel="icon">
+
+  <title>Lesis / sub </title>
+</head>
+
+<body>
+  <!-- 메인 시작 -->
+<!-- TOP BTN[S] -->
+<a id="MOVE_TOP_BTN" href="#">
+  <img src="./images/up_icon.png" alt="">
+</a>
+<style>
+a#MOVE_TOP_BTN {
+  position: fixed;
+  right: 2%;
+  bottom: 50px;
+  display: none;
+  z-index: 2;
+}
+</style>
+<script>
+  $(function() {
+      $(window).scroll(function() {
+          if ($(this).scrollTop() > 500) {
+              $('#MOVE_TOP_BTN').fadeIn();
+          } else {
+              $('#MOVE_TOP_BTN').fadeOut();
+          }
+      });
+      
+      $("#MOVE_TOP_BTN").click(function() {
+          $('html, body').animate({
+              scrollTop : 0
+          }, 400);
+          return false;
+      });
+  });
+</script>
+<!-- TOP BTN[E] -->
+
+
+  <div class="main wrap">
+    <nav>
+      <div class="nav_left">
+        <ul>
+          <li><a href="javascript:void(0);">Product</a></li>
+          <li><a href="javascript:void(0);">Story</a></li>
+        </ul>
+      </div>
+      <div class="nav_right">
+        <ul>
+          <li><a href="javascript:void(0);">Best</a></li>
+          <li><a href="javascript:void(0);">My</a></li>
+        </ul>
+      </div>
+    </nav>
+    <a href="../index.html">
+      <img src="./images/logo.png" alt="" class="logo"></a>
+
+    <div class="collect">
+      <a href="javascript:void(0);">
+        <img src="./images/best collection.png" alt="">
+      </a>
+    </div>
+
+  </div>
+
+  <div class="title wrap">
+    <img src="./images/title_image.png" alt="">
+  </div>
+
+
+
+  <!-- art1 시작 -->
+
+
+  <div class="art1 wrap">
+
+    <div class="container1">
+
+      <div class="box">
+        <img src="./images/art1_box1_image.png" alt="">
+
+        <img class="obj" src="./images/art1_box1_obj.png" alt="">
+
+        <div class="text">
+          <a href="javascript:void(0);">
+            ₩ 19.000
+          </a>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="./images/art1_box2_image.png" alt="">
+
+        <img class="obj" src="./images/art1_box2_obj.png" alt="">
+
+        <div class="text">
+          <a href="javascript:void(0);">
+            ₩ 19.000
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="container2">
+
+      <div class="box">
+        <img src="./images/art1_box3_image.png" alt="">
+
+        <img class="obj" src="./images/art1_box3_obj.png" alt="">
+
+        <div class="text">
+          <a href="javascript:void(0);">
+            ₩ 19.000
+          </a>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="./images/art1_box4_image.png" alt="">
+
+        <img class="obj" src="./images/art1_box4_obj.png" alt="">
+
+        <div class="text">
+          <a href="javascript:void(0);">
+            ₩ 19.000
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- art1 끝 -->
+
+
+  <!-- art2시작 -->
+
+
+  <div class="art2 wrap">
+
+    <div class="container">
+
+      <div class="box">
+        <img src="./images/art2_box1_image.png" alt="">
+
+        <img class="obj" src="./images/art2_box1_obj.png" alt="">
+
+        <div class="text">
+          <a href="javascript:void(0);">
+            ₩ 29.000
+          </a>
+        </div>
+      </div>
+
+
+      <div class="box">
+        <img src="./images/art2_box2_image.png" alt="">
+
+        <img class="obj" src="./images/art2_box2_obj.png" alt="">
+
+        <div class="text">
+          <a href="javascript:void(0);">
+            ₩ 23.000
+          </a>
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+
+
+  </div>
+
+  <!-- art2 끝 -->
+
+
+  <!-- art3 시작 -->
+
+
+  <div class="art3 inner">
+
+    <div class="container1">
+
+      <div class="box">
+        <img src="./images/art3_box1_image.png" alt="">
+        <img class="obj" src="./images/art3_box1_obj.png" alt="">
+        <div class="text">
+          <ul>
+            <li>분위기의 계절</li>
+            <li>뉴트럴 베이지 블러셔</li>
+            <li>
+              <a href="javascript:void(0);">
+                ₩32,000
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="box">
+        <img src="./images/art3_box2_image.png" alt="">
+        <img class="obj" src="./images/art3_box2_obj.png" alt="">
+        <div class="text">
+          <ul>
+            <li>소프티한 재질</li>
+            <li>피니시 매트 립</li>
+            <li>
+              <a href="javascript:void(0);">
+                ₩18,000
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container2">
+
+      <div class="box">
+        <img src="./images/art3_box3_image.png" alt="">
+        <img class="obj" src="./images/art3_box3_obj.png" alt="">
+        <div class="text">
+          <ul>
+            <li>실키한 무드의 슬라이딩</li>
+            <li>RECIPE FACE BLUSH</li>
+            <li>
+              <a href="javascript:void(0);">
+                ₩32,000
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="box">
+        <img src="./images/art3_box4_image.png" alt="">
+        <img class="obj" src="./images/art3_box4_obj.png" alt="">
+        <div class="text">
+          <ul>
+            <li>은은한 발색</li>
+            <li>피니시 매트 립</li>
+            <li>
+              <a href="javascript:void(0);">
+                ₩18,000
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- art3 끝 -->
+
+
+  <div class="art4 inner ">
+    <input id="tap1" type="checkbox">
+    <label for="tap1">더 보기</label>
+    <div class="more">
+      <div class="container1 inner">
+
+        <div class="box">
+          <img src="./images/art4_box1_image.png" alt="">
+          <img class="obj" src="./images/art4_box1_obj.png" alt="">
+          <div class="text">
+            <ul>
+              <li>더욱 광택나게</li>
+              <li>피치 오일 글로우 빔</li>
+              <li>
+                <a href="javascript:void(0);">
+                  ₩28.000
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="box">
+          <img src="./images/art4_box2_image.png" alt="">
+          <img class="obj" src="./images/art4_box2_obj.png" alt="">
+          <div class="text">
+            <ul>
+              <li>지속되는 유분케어</li>
+              <li>블러링 프라이머 선 스틱</li>
+              <li>
+                <a href="javascript:void(0);">
+                  ₩26,000
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="container2 inner">
+
+        <div class="box">
+          <img src="./images/art4_box3_image.png" alt="">
+          <img class="obj" src="./images/art4_box3_obj.png" alt="">
+          <div class="text">
+            <ul>
+              <li>사랑스런 톤업</li>
+              <li>뉴트럴 세범 파우더</li>
+              <li>
+                <a href="javascript:void(0);">
+                  ₩16,000
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="box">
+          <img src="./images/art4_box4_image.png" alt="">
+          <img class="obj" src="./images/art4_box4_obj.png" alt="">
+          <div class="text">
+            <ul>
+              <li>매끈한 피부결</li>
+              <li>레시스 메이크업 픽서</li>
+              <li>
+                <a href="javascript:void(0);">
+                  ₩17,000
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <!-- footer 시작 -->
+
+
+  <div class="footer wrap">
+    <img src="./images/ProductBeautyStory.png" alt="">
+    <img src="./images/logo.png" alt="">
+
+    <div class="text_box_group">
+
+      <div class="box1">
+        <ul>
+          <li>Customer Center</li>
+          <li>1600 -1234</li>
+        </ul>
+      </div>
+
+      <div class="box2">
+        <ul>
+          <li>Order Tracking</li>
+          <li><a href="javascript:void(0);">주문내역</a></li>
+          <li><a href="javascript:void(0);">배송조회</a></li>
+        </ul>
+      </div>
+
+      <div class="box3">
+        <ul>
+          <li>Partnership</li>
+          <li><a href="javascript:void(0);">도매/제휴문의</a></li>
+          <li><a href="javascript:void(0);">해외수출문의</a></li>
+        </ul>
+      </div>
+
+      <div class="box4">
+        <ul>
+          <li>(주) 레시스 코리아</li>
+          <li>(066000) 서울특별시 노원구 전황도로 10-20 유진빌딩 6층</li>
+          <li>대표이사 : 김혜미 사업자 등록번호 : 766-76-323124</li>
+          <li>정보통신판매업: 2019-서울노원-0411</li>
+          <li>고객상담실 : 1588-8000 (평일 10:30 ~ 15:30 off-time )</li>
+          <li>Copyright 2021 Lesis.All Rights Reserved</li>
+        </ul>
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+  <!-- footer 끝 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

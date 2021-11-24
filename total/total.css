@@ -1,0 +1,14 @@
+.inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.wrap {
+  width: 1900px;
+  margin: 0 auto;
+}
+
+/* 리셋 .css  */
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+

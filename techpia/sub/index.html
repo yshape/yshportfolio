@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 리셋.css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <script src="/jquery.min.js"></script>
+  <script defer src="./js/popup.js"></script>
+  <link href="images/favicon.png" rel="icon">
+
+  <title>테크피아 플러스 / sub</title>
+</head>
+
+<body>
+
+ <!-- TOP BTN[S] -->
+ <a id="MOVE_TOP_BTN" href="#">
+  <img src="./images/up_icon.png" alt="">
+</a>
+<style>
+a#MOVE_TOP_BTN {
+  position: fixed;
+  right: 2%;
+  bottom: 50px;
+  display: none;
+  z-index: 2;
+}
+</style>
+<script>
+  $(function() {
+      $(window).scroll(function() {
+          if ($(this).scrollTop() > 500) {
+              $('#MOVE_TOP_BTN').fadeIn();
+          } else {
+              $('#MOVE_TOP_BTN').fadeOut();
+          }
+      });
+      
+      $("#MOVE_TOP_BTN").click(function() {
+          $('html, body').animate({
+              scrollTop : 0
+          }, 400);
+          return false;
+      });
+  });
+</script>
+<!-- TOP BTN[E] -->
+
+
+
+  <!-- 이너 1200px 시작 -->
+  <!-- 헤더시작 -->
+  <header class="inner">
+    <div class="logo">
+      <a href="../index.html">
+        <img src="./images/logo.png" alt="">
+      </a>
+    </div>
+
+    <nav>
+      <ul>
+        <a href="javascript:void(0);">
+          <li>카테고리</li>
+        </a>
+        <a href="javascript:void(0);">
+          <li>베스트</li>
+        </a>
+        <a href="javascript:void(0);">
+          <li>이벤트</li>
+        </a>
+        <a href="javascript:void(0);">
+          <li>테크피아딜</li>
+        </a>
+        <a href="javascript:void(0);">
+          <li class="magazine">매거진</li>
+        </a>
+        <a href="javascript:void(0);">
+          <li>고객후기</li>
+        </a>
+      </ul>
+    </nav>
+  </header>
+  <!-- 헤더끝 -->
+
+  <!-- 구분선 -->
+  <div class="mline wrap">
+  </div>
+
+
+  <!-- art1 시작 -->
+  <div class="art1 wrap">
+    <div class="text inner">
+      <div class="title">
+        <span class="gp">TECHPIA</span> Magazine
+      </div>
+      <div class="title_sub">
+        Techpia Magazine은 누구나 집에서 홈퍼니싱 전문가가 될 수 있도록 정보를 제공하는 테크피아 자체 발간 웹 매거진입니다.<br>
+        테크피아의 다양한 할인 정보는 물론 Self-Solution을 제공하여 보다 쉽게 인테리어 할 수 있습니다.<br>
+        지나간 매거진은 '다시 보기'를 통해 확인하실 수 있습니다.
+      </div>
+
+    </div>
+    <img class="megazine" src="./images/megazine.png" alt="">
+  </div>
+
+
+
+
+  <!-- art1 끝 -->
+
+
+
+
+
+  <!-- art2 시작 -->
+
+
+  <div class="art2 inner">
+
+
+    <div class="text inner">
+      <div class="title">
+        <span class="rp">COMMING SOON</span> 곧 공개됩니다 !
+      </div>
+      <div class="title_sub">
+        Techpia Magazine은 누구나 집에서 홈퍼니싱 전문가가 될 수 있도록 정보를 제공하는 테크피아 자체 발간 웹 매거진입니다.<br>
+        테크피아의 다양한 할인 정보는 물론 Self-Solution을 제공하여 보다 쉽게 인테리어 할 수 있습니다.<br>
+        지나간 매거진은 '다시 보기'를 통해 확인하실 수 있습니다.
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="left">
+        <img src="./images/art2_image.png" alt="">
+      </div>
+
+
+      <div class="right">
+        <ul>
+          <li>
+            4일 후 · 2021년 11월 07일 오후 3:00
+          </li>
+
+
+          <li>
+            작은 변화로 감각적인<br>
+            거실 만들기
+          </li>
+
+
+          <li>
+            포근한 우리집을 꾸밀 계절이 다가오고 있습니다. 집을 위한 <br>
+            획기적인 홈퍼니싱 아이디어를 3인의 전문가들이 알려드립니다.
+          </li>
+
+
+          <li>
+            <div class="g_btn">
+              <ul>
+
+                <li>
+                  <input id="tap1" type="checkbox">
+                  <label for="tap1"><span class="cale">일정추가</span> </label>
+                  <div class="link">
+                    <a href="https://www.microsoft.com/ko-kr/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook"
+                      target="_blank"><img src="./images/schedule_icon1.png" alt=""></a>
+                    <a href="https://calendar.google.com/" target="_blank"><img src="./images/schedule_icon2.png"
+                        alt=""></a>
+                  </div>
+                </li>
+
+                <li>
+                  <input id="tap2" type="checkbox">
+                  <label for="tap2"><span class="share">공유하기</span> </label>
+                  <div class="link">
+                    <a href="javascript:void(0);"><img src="./images/share_icon1.png" alt=""></a>
+                    <a href="javascript:void(0);"><img src="./images/share_icon2.png" alt=""></a>
+                  </div>
+
+                </li>
+
+              </ul>
+            </div>
+          </li>
+
+
+          <li>
+
+          </li>
+
+
+        </ul>
+      </div>
+
+    </div>
+
+
+
+  </div>
+  <!-- art2 끝 -->
+
+
+
+
+
+
+
+  <!-- art3 시작 -->
+
+
+  <div class="art3 wrap">
+
+
+    <div class="text inner">
+      <div class="title">
+        <span class="rp">NEXT</span> Magazine
+      </div>
+    </div>
+
+    <div class="container inner">
+
+
+      <div class="box">
+
+        <div class="left">
+          <img src="./images/art3_box1_image.png" alt="">
+        </div>
+
+        <div class="right1">
+          <ul>
+            <li>
+              2021-11월 2째주
+            </li>
+
+
+            <li>
+              홈파티 제대로<br>
+              즐기기
+            </li>
+
+
+            <li>
+              홈파티를 위한 반짝이는 아이디어와<br>
+              TIP을 공유해 드립니다!
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="box">
+
+        <div class="left">
+          <img src="./images/art3_box2_image.png" alt="">
+        </div>
+
+        <div class="right2">
+          <ul>
+            <li>
+              2021-11월 3째주
+            </li>
+
+
+            <li>
+              효율적인 주방<br>
+              배치를 알아보자
+            </li>
+
+
+            <li>
+              정돈된 주방으로 공간 200% 활용<br>
+              해 보세요, 보다 효율적인 배치를 <br>
+              알려 드리겠습니다. </li>
+          </ul>
+        </div>
+
+      </div>
+
+
+
+    </div>
+
+  </div>
+
+  <!-- art3 끝 -->
+
+
+
+
+
+
+
+
+  <!-- art4 시작 -->
+
+
+  <div class="art4 inner">
+
+    <div class="text inner">
+      <div class="title">
+        <span class="gp">Previos</span> Magazine
+      </div>
+    </div>
+
+
+    <div class="popup modal1">
+      <a href="#none" class="close">
+        <img src="./images/exit_icon.png" alt="">
+      </a>
+      <span>2021년 / 10월 1호</span>
+      <p>게이머를 위한 공간</p>
+      <div class="content">
+        <iframe width="1100" height="600" src="https://www.youtube.com/embed/1HMqPxsktRg" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="popup modal2">
+      <a href="#none" class="close">
+        <img src="./images/exit_icon.png" alt="">
+      </a>
+      <span>2021년 / 10월 2호</span>
+      <p>용도별 테이블 고르기</p>
+      <div class="content">
+        <iframe width="1100" height="600" src="https://www.youtube.com/embed/J-xyw6IzmZw" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe> </div>
+    </div>
+    <div class="popup modal3">
+      <a href="#none" class="close">
+        <img src="./images/exit_icon.png" alt="">
+      </a>
+      <span>2021년 / 10월 3호</span>
+      <p>깔끔한 싱크대 관리법</p>
+      <div class="content">
+        <iframe width="1100" height="600" src="https://www.youtube.com/embed/DOQHZXK9j6s" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe> </div>
+    </div>
+    <div class="popup modal4">
+      <a href="#none" class="close">
+        <img src="./images/exit_icon.png" alt="">
+      </a>
+      <span>2021년 / 09월 1호</span>
+      <p>침실 꾸미기 기초</p>
+      <div class="content">
+        <iframe width="1100" height="600" src="https://www.youtube.com/embed/3GChPQqbfA0" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe> </div>
+    </div>
+    <div class="popup modal5">
+      <a href="#none" class="close">
+        <img src="./images/exit_icon.png" alt="">
+      </a>
+      <span>2021년 / 09월 2호</span>
+      <p>가성비 스탠드,조명 총정리</p>
+      <div class="content">
+        <iframe width="1100" height="600" src="https://www.youtube.com/embed/e9yzvS-VMsc" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe> </div>
+    </div>
+    <div class="popup modal6">
+      <a href="#none" class="close">
+        <img src="./images/exit_icon.png" alt="">
+      </a>
+      <span>2021년 / 09월 3호</span>
+      <p>나만의 DIY환경 만들기</p>
+      <div class="content">
+        <iframe width="1100" height="600" src="https://www.youtube.com/embed/GwlgCUhhovY" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe> </div>
+    </div>
+
+
+    <div class="container1">
+
+      <div class="box">
+        <a href="javascript:openModal('modal1');">
+          <img src="./images/art4_box1_image.png" alt="">
+        </a>
+      </div>
+
+      <div class="box">
+        <a href="javascript:openModal('modal2');">
+          <img src="./images/art4_box2_image.png" alt="">
+        </a>
+      </div>
+
+      <div class="box">
+        <a href="javascript:openModal('modal3');">
+          <img src="./images/art4_box3_image.png" alt="">
+        </a>
+      </div>
+    </div>
+
+    <div class="container2">
+
+      <div class="box">
+        <a href="javascript:openModal('modal4');">
+          <img src="./images/art4_box4_image.png" alt="">
+        </a>
+      </div>
+
+      <div class="box">
+        <a href="javascript:openModal('modal5');">
+          <img src="./images/art4_box5_image.png" alt="">
+        </a>
+      </div>
+
+      <div class="box">
+        <a href="javascript:openModal('modal6');">
+          <img src="./images/art4_box6_image.png" alt="">
+        </a>
+      </div>
+    </div>
+
+
+  </div>
+
+  <!-- art4 끝 -->
+
+
+  <!-- 푸터시작 -->
+  <footer class="wrap">
+
+    <!-- 푸터 상단 부분 -->
+    <div class="top">
+      <div class="line">
+        <img src="./images/line.png" alt="">
+      </div>
+
+      <div class="line_hor">
+        <img src="./images/line_hor.png" alt="">
+      </div>
+
+      <div class="top_box1">
+        <div class="box1_left">
+          <ul>
+            <li>테크피아 고객센터</li>
+            <li>시스템 가구 A/S</li>
+          </ul>
+        </div>
+        <div class="box1_right">
+          <ul>
+            <li>1833-1833</li>
+            <li>1588-1588</li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="top_box2">
+        <div class="box2_left">
+          <ul>
+            <li>Noice</li>
+            <li><a href="javascript:void(0);">2021 추석 배송 안내</a> </li>
+            <li><a href="javascript:void(0);">카카오 쇼핑 라이브 발표 (기프티콘 당첨자)</a></li>
+            <li><a href="javascript:void(0);">적립금 내역 공지사항</a></li>
+          </ul>
+        </div>
+        <div class="box2_right">
+          <ul>
+            <li> <a href="javascript:void(0);">더보기</a> </li>
+            <li>2021.09.14</li>
+            <li>2021.09.09</li>
+            <li>2021.09.09</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- 푸터 하단 부분 -->
+
+
+    <div class="bot">
+      <div class="bot_box1">
+        <div class="bot1_left">
+          <ul>
+            <li>&copy; 2021. TechPia.co.kr. All rights reserved.</li>
+            <li>테크피아 플러스 코리아<br>
+              주소 : 14333 강원도 속초시 테크피아 속초점<br>
+              사업자 등록번호 : 0123-12-124 -12<br>
+              대표자 : 홍길동<br>
+              TEL : 1600=0000</li>
+          </ul>
+        </div>
+      </div>
+      <div class="bot_box2">
+        <div class="box2_left">
+          <ul>
+            <li>개인정보처리방침</li>
+            <li>쿠키 정책</li>
+            <li>쿠키 설정</li>
+            <li>웹사이트 이용약관</li>
+            <li>제휴,입점문의</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+    <div class="footer_logo">
+      <img src="./images/logo.png" alt="">
+    </div>
+
+  </footer>
+
+  <!-- 푸터 끝 -->
+
+
+  <!-- inner 끝 -->
+</body>
+
+</html>

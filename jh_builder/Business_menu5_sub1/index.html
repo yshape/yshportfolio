@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript" src="./js/timeline.js"></script>
+  <link rel="stylesheet" href="./css/timeline.css">
+  <link href="images/favicon.png" rel="icon">
+
+  <title>진흥건설 / 기업정보</title>
+</head>
+
+<body>
+  <!-- 헤더시작 -->
+  <header class="inner">
+    <div class="logo">
+      <a href="../index.html">
+        <img src="./images/header_logo.png" alt="">
+      </a>
+    </div>
+    <!-- 헤더 안 작은 네비 -->
+    <div class="header_nav">
+      <ul>
+        <li><a href="">HOME</a></li>
+        <li><a href="">LOGIN</a></li>
+      </ul>
+    </div>
+  </header>
+  <!-- 헤더 끝 -->
+
+  <!-- TOP BTN[S] -->
+  <a id="MOVE_TOP_BTN" href="#">
+    <img src="./images/up_icon.png" alt="">
+  </a>
+  <style>
+    a#MOVE_TOP_BTN {
+      position: fixed;
+      right: 2%;
+      bottom: 50px;
+      display: none;
+      z-index: 5;
+    }
+  </style>
+  <script>
+    $(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 500) {
+          $('#MOVE_TOP_BTN').fadeIn();
+        } else {
+          $('#MOVE_TOP_BTN').fadeOut();
+        }
+      });
+
+      $("#MOVE_TOP_BTN").click(function () {
+        $('html, body').animate({
+          scrollTop: 0
+        }, 400);
+        return false;
+      });
+    });
+  </script>
+  <!-- TOP BTN[E] -->
+
+
+  <aside>
+    <a href="">
+      <div class="item"><img src="./images/aside1.png" alt=""></div>
+    </a>
+    <a href="">
+      <div class="item"><img src="./images/aside2.png" alt=""></div>
+    </a>
+    <a href="">
+      <div class="item"><img src="./images/aside3.png" alt=""></div>
+    </a>
+  </aside>
+
+
+  <!-- 네비 시작 -->
+  <nav class="wrap">
+    <ul>
+      <li class="main">
+        <a class="first" href="">사업분야</a>
+        <ul class="sub">
+          <a href="">
+            <li>기업정보</li>
+          </a>
+          <a href="">
+            <li>CEO</li>
+          </a>
+          <a href="">
+            <li>VISION</li>
+          </a>
+          <a href="">
+            <li>연혁</li>
+          </a>
+          <a href="">
+            <li>주요사업</li>
+          </a>
+        </ul>
+      </li>
+      <li class="main">
+        <a class="first" href="">홍보센터</a>
+        <ul class="sub">
+          <a href="">
+            <li>웹진</li>
+          </a>
+          <a href="">
+            <li>영상 홍보관</li>
+          </a>
+          <a href="">
+            <li>진흥 뉴스</li>
+          </a>
+          <a href="">
+            <li>브로슈어</li>
+          </a>
+          <a href="">
+            <li>보도자료</li>
+          </a>
+        </ul>
+      </li>
+      <li class="main">
+        <a class="first" href="">인재채용</a>
+        <ul class="sub">
+          <a href="">
+            <li>공개채용</li>
+          </a>
+          <a href="">
+            <li>인재개발원</li>
+          </a>
+          <a href="">
+            <li>일반사항</li>
+          </a>
+        </ul>
+
+      </li>
+      <li class="main">
+        <a class="first" href="">고객센터</a>
+        <ul class="sub">
+          <a href="">
+            <li>고객상담실</li>
+          </a>
+          <a href="">
+            <li>공익신고</li>
+          </a>
+          <a href="">
+            <li>전자신문고</li>
+          </a>
+          <a href="">
+            <li>시설개방 안내</li>
+          </a>
+          <a href="">
+            <li>입찰정보</li>
+          </a>
+        </ul>
+
+      </li>
+      <li class="main">
+        <a class="first" href="">투자정보</a>
+        <ul class="sub">
+          <a href="">
+            <li>정보공개제도</li>
+          </a>
+          <a href="">
+            <li>사전정보공표</li>
+          </a>
+          <a href="">
+            <li>법무</li>
+          </a>
+          <a href="">
+            <li>사규</li>
+          </a>
+          <a href="">
+            <li>사업실명제</li>
+          </a>
+        </ul>
+
+      </li>
+    </ul>
+    <div class="nav_search">
+      <input type="text" placeholder=" &nbsp; 검색어를 입력하세요.">
+      <img src="./images/nav_search_icon.png" alt="">
+    </div>
+
+  </nav>
+  <!-- 네비끝 -->
+
+  <!-- 서브네비 시작 -->
+
+
+  <div class="sub_nav inner">
+
+
+    <div class="sub_nav_icon">
+      <a href="../index.html">
+        <img src="./images/sub_nav_icon.png" alt="">
+      </a>
+    </div>
+
+    <div class="sub_nav_li">
+      <ul>
+        <li><a href="">투자정보</a></li>
+        <li><a href="">정보공개제도</a></li>
+      </ul>
+    </div>
+
+
+
+  </div>
+
+
+  <!-- 서브네비 끝 -->
+
+
+  <!-- 타이틀 시작 -->
+
+  <div class="main_title wrap">
+    <div class="info">
+      <span>정보공개제도</span>
+    </div>
+  </div>
+
+  <!-- 타이틀 끝 -->
+
+  <!-- art1 시작 -->
+
+
+  <div class="art1 wrap">
+
+    <div class="more_box">
+      <div><a href="javascript:void(0);">더 보기</a></div>
+      <div class="arrow"><a href=""><img src="./images/arrow_icon.png" alt=""></a></div>
+    </div>
+
+  </div>
+
+
+  <!-- art1 끝 -->
+
+
+  <!-- art2 시작 -->
+
+
+  <div class="art2 wrap">
+
+    <!-- 버튼그룹 1입니다 -->
+    <div class="btn_group1">
+      <a href="javascript:void(0);">
+        <div class="right">
+        </div>
+      </a>
+      <a href="javascript:void(0);">
+        <div class="left">
+        </div>
+      </a>
+    </div>
+
+    <!-- 버튼그룹 2입니다 -->
+    <div class="btn_group2">
+      <a href="javascript:void(0);">
+        <div class="right">
+        </div>
+      </a>
+      <a href="javascript:void(0);">
+        <div class="left">
+        </div>
+      </a>
+    </div>
+
+  </div>
+
+
+
+  <!-- art2 끝 -->
+
+
+  <!-- art3 시작 -->
+
+
+  <div class="art3 wrap">
+    <div class="item_container">
+
+      <a href="javascript:void(0);">
+        <div class="item1">
+          <div class="art3_text">
+            <div>주주구성</div>
+            <div class="arrow2">
+              <img src="./images/arrow2.png" alt="">
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="javascript:void(0);">
+        <div class="item2">
+          <div class="art3_text">
+            <div>제무제표</div>
+            <div class="arrow2">
+              <img src="./images/arrow2.png" alt="">
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="javascript:void(0);">
+        <div class="item3">
+          <div class="art3_text">
+            <div>IR행사</div>
+            <div class="arrow2">
+              <img src="./images/arrow2.png" alt="">
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="javascript:void(0);">
+        <div class="item4">
+          <div class="art3_text">
+            <div>IR자료실</div>
+            <div class="arrow2">
+              <img src="./images/arrow2.png" alt="">
+            </div>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+
+
+  <!-- art3 끝 -->
+
+
+  <!-- art4 시작 -->
+
+<div class="art4 inner"> 
+
+</div>
+
+
+
+
+  <!-- art4 끝 -->
+
+
+  <!-- art5 시작 -->
+
+
+
+
+
+  <!-- art5 끝 -->
+
+  <!-- footer 시작 -->
+
+  <footer class="wrap">
+    <div class="container">
+      <div class="left">
+        <ul>
+          <li>&copy; 2020. JHenc.co.kr. All rights reserved.</li>
+          <li>(주) 진흥기업</li>
+          <li>주소 : 14333 대구 광역시 방촌동 입석로 120 -1</li>
+          <li>사업자 등록번호 : 0123-12-124 -12</li>
+          <li>대표자 : 홍길동</li>
+          <li>TEL : 1600=0000/li>
+        </ul>
+      </div>
+      <div class="right">
+        <ul>
+          <li><a href="javascript:void(0)">개인정보처리방침</a></li>
+          <li><a href="javascript:void(0)">쿠키 정책</a></li>
+          <li><a href="javascript:void(0)">쿠키 설정</a></li>
+          <li><a href="javascript:void(0)">웹사이트 이용약관</a></li>
+        </ul>
+      </div>
+      <img src="./images/header_logo.png" alt="" class="footer_logo">
+    </div>
+
+  </footer>
+
+
+  <!-- footer 끝 -->
+
+
+</body>
+
+</html>

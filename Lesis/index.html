@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 리셋.css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <link href="images/favicon.png" rel="icon">
+
+  <title>Lesis</title>
+</head>
+
+<body>
+  <!-- 메인 시작 -->
+<!-- TOP BTN[S] -->
+<a id="MOVE_TOP_BTN" href="#">
+  <img src="./images/up_icon.png" alt="">
+</a>
+<style>
+a#MOVE_TOP_BTN {
+  position: fixed;
+  right: 2%;
+  bottom: 50px;
+  display: none;
+  z-index: 5;
+}
+</style>
+<script>
+  $(function() {
+      $(window).scroll(function() {
+          if ($(this).scrollTop() > 500) {
+              $('#MOVE_TOP_BTN').fadeIn();
+          } else {
+              $('#MOVE_TOP_BTN').fadeOut();
+          }
+      });
+      
+      $("#MOVE_TOP_BTN").click(function() {
+          $('html, body').animate({
+              scrollTop : 0
+          }, 400);
+          return false;
+      });
+  });
+</script>
+<!-- TOP BTN[E] -->
+
+
+  <div class="fixed">
+    <img src="./images/zz.png" alt="">
+  </div>
+
+  <div class="main wrap">
+    <nav>
+      <div class="nav_left">
+        <ul>
+          <li><a href="javascript:void(0);">Product</a></li>
+          <li><a href="javascript:void(0);">Story</a></li>
+        </ul>
+      </div>
+      <div class="nav_right">
+        <ul>
+          <li><a href="./sub/index.html">Best</a></li>
+          <li><a href="javascript:void(0);">My</a></li>
+        </ul>
+      </div>
+    </nav>
+    <a href="javascript:void(0);"><img src="./images/logo.png" alt="" class="logo"></a>
+
+    <div class="main_text">
+      <ul>
+        <li> Ambience Collection </li>
+        <li><a href="javascript:void(0);"> More cllection </a></li>
+      </ul>
+    </div>
+  </div>
+
+
+  <!-- 메인 끝 -->
+
+  <!-- 디바이드1 -->
+  <div class="divide1 wrap">
+    <img src="./images/divide1.png" alt="">
+  </div>
+  <!-- 이바이드끝 -->
+
+  <!-- art1 시작 -->
+
+
+  <div class="art1 wrap">
+    <img src="./images/art1_image.png" alt="">
+    <img src="./images/art1_ast1.png" alt="" class="ast1">
+    <img src="./images/art1_ast2.png" alt="" class="ast2">
+
+    <div class="text_g1">
+      <ul>
+        <li>가장 사랑받고 있는 베스트 셀러</li>
+        <li><a href="javascript:void(0);">MORE</a></li>
+      </ul>
+    </div>
+
+    <div class="text_g2">
+      <ul>
+        <li>레시스 퍼펙트 로션, 아쿠아 수딩 크림 set</li>
+        <li>가볍게 바르기만 해도</li>
+        <li>피부결을 정돈시켜줍니다.</li>
+        <li><a href="javascript:void(0);">SHOP</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+
+  <!-- art1 끝 -->
+
+  <!-- art2 시작 -->
+
+
+  <div class="art2 wrap">
+    <img src="./images/art2_image.png" alt="">
+
+    <div class="imgbox">
+      <img class="obj" src="./images/art2_obj.png" alt="">
+    </div>
+    <div class="text_g1">
+      <ul>
+        <li>새롭게 선보이는 타입의 파운데이션</li>
+        <li><a href="javascript:void(0);">MORE</a></li>
+      </ul>
+    </div>
+
+    <div class="text_g3">
+      <ul>
+        <li>NEW TYPE 브로우 쉐이퍼</li>
+        <li>눈썹의 결과 숱에 생동감을 불어넣어 새로운</li>
+        <li>인상과 무드를 만들어 보세요.</li>
+        <li><a href="javascript:void(0);">SHOP</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+
+  <!-- art2 끝 -->
+
+
+  <!-- 디바이드2 -->
+  <!-- <div class="divide2 wrap">
+    <img src="./images/divide2.png" alt="">
+  </div> -->
+  <!-- 이바이드끝 -->
+
+  <!-- art3 시작 -->
+
+
+  <div class="art3 wrap">
+    <!-- 립스틱 이미지들 -->
+    <img src="./images/art3_ast1.png" alt="" class="ast1">
+    <img src="./images/art3_ast2.png" alt="" class="ast2">
+    <img src="./images/art3_ast3.png" alt="" class="ast3">
+    <img src="./images/art3_ast4.png" alt="" class="ast4">
+
+
+    <div class="text_g3">
+      <ul>
+        <li>Lesis에서 선보이는 새로운 종류의 립 </li>
+        <li>부담이 없는 소프트한 재질을 여러분께 제공합니다.</li>
+        <li><a href="javascript:void(0);">SHOP</a></li>
+      </ul>
+    </div>
+
+    <div class="text_g4">
+      <ul>
+        <li>경험해보세요.</li>
+        <li>오래가는 지속력과</li>
+        <li>매끈함, 윤기, 자연스러운 색감</li>
+      </ul>
+    </div>
+  </div>
+
+
+
+  <!-- art3 끝 -->
+
+  <!-- art4 시작 -->
+
+
+  <div class="art4 wrap">
+
+    <div class="text_g4">
+      <ul>
+        <li>레시스의 공식 유튜브, 인스타그램을 통해</li>
+        <li> 정보를 제공받으세요.</li>
+        <li><a href="javascript:void(0);">SHOP</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+  <!-- art4 끝 -->
+
+
+
+  <!-- footer 시작 -->
+
+
+  <div class="footer wrap">
+    <img src="./images/ProductBeautyStory.png" alt="">
+    <img src="./images/logo.png" alt="">
+
+    <div class="text_box_group">
+
+      <div class="box1">
+        <ul>
+          <li>Customer Center</li>
+          <li>1600 -1234</li>
+        </ul>
+      </div>
+
+      <div class="box2">
+        <ul>
+          <li>Order Tracking</li>
+          <li><a href="javascript:void(0);">주문내역</a></li>
+          <li><a href="javascript:void(0);">배송조회</a></li>
+        </ul>
+      </div>
+
+      <div class="box3">
+        <ul>
+          <li>Partnership</li>
+          <li><a href="javascript:void(0);">도매/제휴문의</a></li>
+          <li><a href="javascript:void(0);">해외수출문의</a></li>
+        </ul>
+      </div>
+
+      <div class="box4">
+        <ul>
+          <li>(주) 레시스 코리아</li>
+          <li>(066000) 서울특별시 노원구 전황도로 10-20 유진빌딩 6층</li>
+          <li>대표이사 : 김혜미 사업자 등록번호 : 766-76-323124</li>
+          <li>정보통신판매업: 2019-서울노원-0411</li>
+          <li>고객상담실 : 1588-8000 (평일 10:30 ~ 15:30 off-time )</li>
+          <li>Copyright 2021 Lesis.All Rights Reserved</li>
+        </ul>
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+  <!-- footer 끝 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
